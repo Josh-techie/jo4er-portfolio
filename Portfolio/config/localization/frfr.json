@@ -1,0 +1,95 @@
+{
+	"id": "frfr",
+	"navbarMenu": {
+		"labelHome": "MENU PRINCIPAL",
+		"labelServices": "MES DOMAINES",
+		"labelAboutMe": "WHOAMI",
+		"labelPortifolio": "PROJETS",
+		"labelExperience": "EXPERIENCES"
+	},
+	"landingPage": {
+		"apresentationText": "Hello World,",
+		"name": "Youssef Abouyahia",
+		"resumeText": "🛡️ Ingénieur Cybersécurité passionné par le pentesting, j'alimente cette passion en jouant régulièrement à des CTF.\n\n🤖 Créateur d'automations, j'adore créer des automations n8n pour simplifier ma vie quotidienne. Que ce soit à travers des dispositifs IoT connectés ou des workflows n8n personnalisés, je cherche constamment à automatiser et optimiser mes tâches. Mon prochain défi : apprendre à hacker ces dispositifs IoT pour mieux comprendre leur sécurité. C'est pour cela que je suis à la recherche d'un stage pour financer cette passion.",
+		"buttonText": "A propos de moi"
+	},
+	"servicesOffer": {
+		"title": "Mes domaines",
+		"cards": {
+			"forensique": {
+				"title": "Forensique",
+				"contentText": "Compétences avancées en forensique digitale: acquisition des données, analyse des preuves et développement d'outils d'analyse."
+			},
+			"reverse": {
+				"title": "Reverse",
+				"contentText": "Solides compétences en analyse statique/dynamique de binaire et en désobfuscation de logiciels malveillants."
+			},
+			"devsecops": {
+				"title": "DevSecOps",
+				"contentText": "Mise en place et hébergement d'outils et de solutions tout en prenant en compte la sécurité informatique et de la conformité réglementaire. Compétent en CI/CD et sécurité réseau."
+			},
+			"domotique": {
+				"title": "Domotic",
+				"contentText": "Hébergement local de solutions domotiques. Installation, création, connexion d'appareils domotiques permettant d'automatiser des tâches quotidiennes répétitives."
+			},
+			"developpement": {
+				"title": "Développement",
+				"contentText": "Expertise en Java, Python, C/C++, Javascript, Bash, Docker et autres. Utilisation avancée de Github pour la gestion de versions et la collaboration sur des projets personnels et professionnels."
+			}
+		}
+	},
+	"aboutMePage": {
+		"title": "WHOAMI?",
+		"paragraph_one": "Étudiant en Master 2 Cybersécurité et Leadership de Crise à l'ESILV, je suis actuellement à la recherche d'un stage pour mars/avril 2026.",
+		"paragraph_two": "Diplômé ingénieur d'État en cybersécurité et passionné par le pentesting, j'alimente cette passion en participant régulièrement à des CTF.",
+		"paragraph_three": "Passionné d'IoT, j'ai réalisé plusieurs projets de dispositifs connectés et je suis très investi dans l'automatisation de tâches quotidiennes. Dans mon temps libre, j'explore le hardware hacking et j'apprends à casser ces petits dispositifs IoT pour mieux comprendre leur sécurité. Cependant, l'IoT peut être coûteux, et pour poursuivre cette passion qui consiste à analyser et exploiter les vulnérabilités de ces appareils, j'ai besoin de financer l'achat de matériel. C'est l'une des raisons pour lesquelles je recherche activement un stage.",
+		"github_card": {
+			"followers": "followers",
+			"following": "following",
+			"repos": "repos"
+		},
+		"alt_dev_img": "jo4er",
+		"cv": {
+			"file": "/cv/CV_Fr_YoussefAbouyahia.pdf",
+			"buttonText": "Télécharger CV"
+		}
+	},
+	"portifolioPage": {
+		"title": "PROJETS",
+		"labelFilter": "TOUS",
+		"createdLabel": "Créé le"
+	},
+	"experiencePage": {
+		"title": "EXPERIENCES",
+		"timeline": {
+			"labelPosition": "Position",
+			"labelTitle": "Intitulé",
+			"labelCompany": "Entreprise",
+			"labelCategory": "Catégorie",
+			"labelInstitution": "Institution",
+			"labelProfessionalCourse": "Cours professionnels",
+			"labelBachelorDegree": "Baccalauréat",
+			"labelExtensionCourse": "Cours d'extension"
+		}
+	},
+	"footer": {
+		"labelNavigation": {
+			"title": "Navigation",
+			"labelHome": "Menu principal",
+			"labelServices": "Mes domaines",
+			"labelAboutMe": "Whoami",
+			"labelPortifolio": "Projets",
+			"labelExperience": "Expériences"
+		},
+		"labelHost": {
+			"title": "HEBERGEMENT"
+		},
+		"labelSourceCode": {
+			"title": "CODE SOURCE"
+		},
+		"labelTechs": {
+			"title": "TECHNOLOGIES"
+		},
+		"labelBuildVersion": "Version"
+	}
+}

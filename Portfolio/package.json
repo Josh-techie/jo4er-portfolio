@@ -1,0 +1,24 @@
+{
+	"name": "jo4er-portfolio",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"lottie-react": "^2.4.0",
+		"next": "^15.2.4",
+		"react": "^18.3.1",
+		"react-awesome-reveal": "^4.2.14",
+		"react-dom": "^18.3.1",
+		"react-scroll": "^1.9.0",
+		"react-scroll-progress-bar": "^2.0.3",
+		"react-type-animation": "^3.2.0",
+		"react-vertical-timeline-component": "^3.6.0",
+		"styled-components": "^5.3.11",
+		"styled-icons": "^10.47.1"
+	}
+}
