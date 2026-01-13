@@ -57,6 +57,16 @@ const projects = [
     homepage: "",
     svn_url: "https://github.com/Josh-techie/Smart_Door",
     created_at: "2023-12-24T00:00:00Z",
+  },
+  {
+    name: "SABIB",
+    description:
+      "SABIB is an IoT-based smart water management system that combines connected sensors, a web platform, and a mobile application to monitor water consumption in real time. It enables users to visualize usage data, detect leaks, receive alerts, and remotely control water flow to reduce waste and promote efficient water management.",
+    language: "React/Flutter/Arduino",
+    topics: ["iot", "arduino", "firebase", "react", "flutter", "sensors", "water-conservation", "thingspeak", "ai", "vercel"],
+    homepage: "https://sabib-test.vercel.app/",
+    svn_url: "https://github.com/Josh-techie/SABIB-Electronic-Circuits",
+    created_at: "2024-05-05T00:00:00Z",
   }
 ];
 
