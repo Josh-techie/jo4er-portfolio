@@ -1,6 +1,6 @@
 // Placeholder static projects list — edit this file to update portfolio items.
 const projects = [
-    {
+  {
     name: "SAYO-Antivirus",
     description:
       "Antivirus project implementing signature-, heuristic- and behavior-based detection. Features: manual/on-access/scheduled/quick/full scans, quarantine, and firewall integration. Built with Python (Tkinter) and C modules, uses YARA rules and VirusTotal for detection.",
@@ -11,42 +11,14 @@ const projects = [
     created_at: "2024-05-23T00:00:00Z",
   },
   {
-    name: "jo4er",
-    description: "Personal repository",
-    language: "",
-    topics: ["github-profile", "markdown"],
-    homepage: "",
+    name: "jo4er-portfolio",
+    description:
+      "A modern containerized, responsive portfolio built with Next.js, to share my work and technical background with a global audience.",
+    language: "JavaScript/Next.js",
+    topics: ["javascript", "Nextdotjs", "docker"],
+    homepage: "https://jo4er.com",
     svn_url: "https://github.com/joeseph/jo4er-portfolio",
-    created_at: "2022-09-09T00:00:00Z",
-  },
-  {
-    name: "AmongUsMap",
-    description:
-      "This C++ project reverse engineers AmongUs to extract player data and construct a map of player positions in the game world.",
-    language: "C++",
-    topics: ["cpp", "reverse-engineering"],
-    homepage: "",
-    svn_url: "https://github.com/joeseph/AmongUsMap",
-    created_at: "2021-11-06T00:00:00Z",
-  },
-  {
-    name: "dotfiles",
-    description: "My dotfiles for my Arch based installation.",
-    language: "Shell",
-    topics: ["archlinux", "markdown"],
-    homepage: "",
-    svn_url: "https://github.com/joeseph/dotfiles",
-    created_at: "2024-11-27T00:00:00Z",
-  },
-  {
-    name: "ExplorateurElliptique",
-    description:
-      "Elliptic curve explorer using Desmos API on a Vue.js site. Visualizes curves and points with interactive features.",
-    language: "JavaScript",
-    topics: ["desmos-api", "vuejs", "javascript"],
-    homepage: "https://elliptic-explorer.jo4er.com",
-    svn_url: "https://github.com/joeseph/ExplorateurElliptique",
-    created_at: "2022-03-16T00:00:00Z",
+    created_at: "2025-12-09T00:00:00Z",
   },
   {
     name: "Smart Door",
@@ -54,7 +26,7 @@ const projects = [
       "Smart Door: A cutting-edge door access control system that utilizes Arduino, IoT, and OpenCV. Features remote operation via a mobile app, two-factor authentication, OpenCV-based face recognition, and a push-button exit.",
     language: "Arduino/Python",
     topics: ["arduino", "python3", "iot", "opencv"],
-    homepage: "",
+    homepage: "https://drive.google.com/drive/folders/1MKN39bfqW3K3Qk-hdvGKEYFSpYBxwTXW",
     svn_url: "https://github.com/Josh-techie/Smart_Door",
     created_at: "2023-12-24T00:00:00Z",
   },
@@ -67,6 +39,26 @@ const projects = [
     homepage: "https://sabib-test.vercel.app/",
     svn_url: "https://github.com/Josh-techie/SABIB-Electronic-Circuits",
     created_at: "2024-05-05T00:00:00Z",
+  },
+  {
+    name: "Pop Quiz",
+    description:
+      "Interactive quiz platform allowing users to create or take public quizzes with timed exams, score reviews, and live leaderboards. Built with React, TailwindCSS, and Firebase; open-source and deployed on Vercel."
+    ,
+    language: "JavaScript/React",
+    topics: ["react", "firebase", "tailwindcss", "vercel", "open-source", "javascript"],
+    homepage: "https://pop-quiz-five.vercel.app/",
+    svn_url: "https://github.com/Josh-techie/Pop-Quiz",
+    created_at: "2024-07-01T00:00:00Z",
+  },
+  {
+    name: "AI-TPs",
+    description:
+      "AI-TPs is a personal lab where I turn messy web data into clean, usable info. It’s a mix of university work and my own deep dives, covering everything from Python fundamentals, APIs, web scraping, machine learning, neural networks, EDA, data cleaning, Pandas manipulation, and gaming algorithms.",
+    language: "Python/Jupyter",
+    topics: ["python3", "machine-learning", "web-scraping", "pandas", "api", "jupyter", "neural-networks"],
+    svn_url: "https://github.com/Josh-techie/AI-TPs",
+    created_at: "2023-09-01T00:00:00Z",
   }
 ];
 
