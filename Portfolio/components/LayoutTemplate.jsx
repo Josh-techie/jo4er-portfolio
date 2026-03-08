@@ -100,6 +100,24 @@ const SwitchMenuContainer = styled.div`
 	}
 `;
 
+const ControlsContainer = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	margin-left: 15px;
+
+	@media (max-width: 900px) {
+		gap: 10px;
+		margin-left: 10px;
+	}
+
+	@media (max-width: 600px) {
+		gap: 5px;
+		margin-left: 5px;
+	}
+`;
+
 const NavbarOption = styled.h4`
 	color: ${(props) => props.theme.colors.title};
 	font-weight: 800;
@@ -207,13 +225,13 @@ export default function LayoutTemplate({ children }) {
 						</a>
 					</Fade>
 					<Fade direction="down" delay={600} duration={200}>
-						{/* <LanguageSwitchButton /> */}
-						<SwitchThemeButton />
+						<ControlsContainer>
+							<SwitchThemeButton />
+						</ControlsContainer>
 					</Fade>
 				</NavbarOptionContainer>
 
 				<SwitchMenuContainer>
-					{/* <LanguageSwitchButton /> */}
 					<SwitchThemeButton />
 				</SwitchMenuContainer>
 			</HeaderContainer>

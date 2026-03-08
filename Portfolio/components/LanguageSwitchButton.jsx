@@ -71,9 +71,23 @@ const LanguageWrapper = styled.div`
 	align-items: center;
 	flex-direction: row;
 	margin-left: 15px;
+	gap: 8px;
 
 	@media (max-width: 601px) {
 		margin-bottom: 30px;
+		gap: 4px;
+		margin-left: 5px;
+	}
+
+	img {
+		border-radius: 4px;
+		border: 1px solid ${(props) => props.theme.colors.branding}33;
+		transition: all 0.3s ease;
+
+		&:hover {
+			border-color: ${(props) => props.theme.colors.branding};
+			transform: scale(1.05);
+		}
 	}
 `;
 

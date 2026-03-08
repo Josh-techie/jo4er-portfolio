@@ -130,6 +130,10 @@ const ButtonSaibaMais = styled.button`
 	border-radius: 4px;
 	background-color: ${(props) => props.theme.colors.branding};
 	font-weight: 700;
+	font-family: inherit;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 
 	&:hover {
 		cursor: pointer;
@@ -138,10 +142,15 @@ const ButtonSaibaMais = styled.button`
 
 	@media (max-width: 601px) {
 		width: 70%;
+		font-size: ${(props) => props.theme.fontSizes.md};
+		height: 48px;
 	}
 
 	@media (max-width: 425px) {
 		width: 100%;
+		font-size: ${(props) => props.theme.fontSizes.sm};
+		height: 52px;
+		padding: 0 10px;
 	}
 `;
 
