@@ -7,6 +7,7 @@ import { Fade } from "react-awesome-reveal";
 
 //Custom components
 import SwitchThemeButton from "@/components/SwitchThemeButton";
+import LanguageDropdown from "@/components/LanguageDropdown";
 import { scrollToSection } from "./SmoothScroll";
 
 //Contexto
@@ -226,12 +227,14 @@ export default function LayoutTemplate({ children }) {
 					</Fade>
 					<Fade direction="down" delay={600} duration={200}>
 						<ControlsContainer>
+							<LanguageDropdown />
 							<SwitchThemeButton />
 						</ControlsContainer>
 					</Fade>
 				</NavbarOptionContainer>
 
 				<SwitchMenuContainer>
+					<LanguageDropdown />
 					<SwitchThemeButton />
 				</SwitchMenuContainer>
 			</HeaderContainer>

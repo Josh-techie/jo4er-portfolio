@@ -1,44 +1,48 @@
 {
 	"id": "enuk",
 	"navbarMenu": {
-		"labelHome": "MENU PRINCIPAL",
-		"labelServices": "MES DOMAINES",
+		"labelHome": "MAIN MENU",
+		"labelServices": "MY FIELDS",
 		"labelAboutMe": "WHOAMI",
-		"labelPortifolio": "PROJETS",
+		"labelPortifolio": "PROJECTS",
 		"labelExperience": "EXPERIENCES"
 	},
 	"landingPage": {
 		"apresentationText": "Hello World,",
 		"name": "Youssef Abouyahia",
-		"resumeText": "Fasciné par l'informatique et par ses enjeux sécuritaires, j'exerce dans les métiers de la cybersécurité et actuellement en tant qu'analyste CSIRT. Créatif et persévérant, j’aime relever les défis en équipe pour répondre aux enjeux actuels en termes de sécurité informatique.",
-		"buttonText": "A propos de moi"
+		"resumeText": "Cybersecurity Engineer passionate about pentesting, I nurture this passion by regularly playing CTFs.\n\nCreator of automations, I love building n8n automations to simplify my daily life. Whether through connected IoT devices or custom n8n workflows, I constantly seek to automate and optimize my tasks. My next challenge: learning to hack these IoT devices to better understand their security. This is why I am looking for an internship to fund this passion.",
+		"buttonText": "About me"
 	},
 	"servicesOffer": {
-		"title": "Mes domaines",
+		"title": "My Fields",
 		"cards": {
 			"forensique": {
-				"title": "Forensique",
-				"contentText": "Solide connaissances des principes de base de la forensique informatique, y compris les méthodes d'acquisition de données, d'analyse des données et de présentation des preuves."
+				"title": "Forensics",
+				"contentText": "Advanced skills in digital forensics: data acquisition, evidence analysis, and development of analysis tools."
+			},
+			"reverse": {
+				"title": "Reverse Engineering",
+				"contentText": "Strong skills in static/dynamic binary analysis and malware deobfuscation."
 			},
 			"devsecops": {
 				"title": "DevSecOps",
-				"contentText": "Forte compréhension du développement, de la sécurité informatique et de la conformité réglementaire. Compétent en CI/CD, sécurité réseau, tests d'intrusion."
+				"contentText": "Deployment and hosting of tools and solutions while taking into account IT security and regulatory compliance. Proficient in CI/CD and network security."
 			},
-			"pentesting": {
-				"title": "Pentesting",
-				"contentText": "Test d'intrusion et vulnérabilités courantes. Reconnaissance, exploitation, post-exploitation et reporting. Indentification et correction des vulnérabilités pour assurer la sécurité des systèmes et des réseaux."
+			"domotique": {
+				"title": "Home Automation",
+				"contentText": "Local hosting of home automation solutions. Installation, creation, and connection of home automation devices to automate repetitive daily tasks."
 			},
 			"developpement": {
-				"title": "Développement",
-				"contentText": "Expertise en Java, Python, C++, JavaScript, Bash, Docker et autres. Utilisation avancée de Github pour la gestion de versions et la collaboration sur des projets personnels et professionnels. "
+				"title": "Development",
+				"contentText": "Expertise in Java, Python, C/C++, Javascript, Bash, Docker, and more. Advanced use of Github for version management and collaboration on personal and professional projects."
 			}
 		}
 	},
 	"aboutMePage": {
-		"title": "WHOAMI",
-		"paragraph_one": "Je suis actuellement analyse CSIRT à Orange Cyberdefense.",
-		"paragraph_two": "Ingénieur en cybersécurité expérimenté, je suis passionné par la protection des données et la sécurité informatique. Avec de l'expérience dans l'industrie, je suis spécialisé dans la mise en place de systèmes de sécurité solides pour les entreprises de toutes tailles. Je suis également compétent en matière de tests de pénétration, de conformité réglementaire et de gestion des incidents de sécurité. Mon objectif est de fournir des solutions de sécurité avancées pour aider à protéger les actifs numériques.",
-		"paragraph_three": "En tant que self-hosteur, je crois fermement que chacun devrait avoir le contrôle total sur ses données et ses services en ligne. C'est pourquoi je me suis spécialisé dans l'hébergement de mes propres sites web, applications et services, pour éviter la dépendance aux grands fournisseurs de services en ligne. J'aime partager mes connaissances et expériences avec les autres pour les aider à comprendre les avantages du self-hébergement et à se lancer dans l'aventure. Mon objectif est de faciliter l'accès à l'autonomie en matière de technologies numériques pour tous.",
+		"title": "WHOAMI?",
+		"paragraph_one": "Master 2 student in Cybersecurity and Crisis Leadership at ESILV, I am currently looking for an internship for April/May 2026.",
+		"paragraph_two": "State Engineer graduate in cybersecurity and passionate about pentesting, I nurture this passion by regularly participating in CTFs.",
+		"paragraph_three": "Passionate about IoT, I have completed several connected device projects and am heavily invested in automating daily tasks. In my free time, I explore hardware hacking and learn how to break these small IoT devices to better understand their security. However, IoT can be costly, and to pursue this passion of analyzing and exploiting the vulnerabilities of these devices, I need to fund the purchase of equipment. This is one of the reasons why I am actively seeking an internship.",
 		"github_card": {
 			"followers": "followers",
 			"following": "following",
@@ -51,37 +55,37 @@
 		}
 	},
 	"portifolioPage": {
-		"title": "PROJETS",
-		"labelFilter": "TOUS",
-		"createdLabel": "Créé le"
+		"title": "PROJECTS",
+		"labelFilter": "ALL",
+		"createdLabel": "Created on"
 	},
 	"experiencePage": {
 		"title": "EXPERIENCES",
 		"timeline": {
 			"labelPosition": "Position",
-			"labelTitle": "Intitulé",
-			"labelCompany": "Entreprise",
-			"labelCategory": "Catégorie",
+			"labelTitle": "Title",
+			"labelCompany": "Company",
+			"labelCategory": "Category",
 			"labelInstitution": "Institution",
-			"labelProfessionalCourse": "Cours professionnels",
-			"labelBachelorDegree": "Baccalauréat",
-			"labelExtensionCourse": "Cours d'extension"
+			"labelProfessionalCourse": "Professional courses",
+			"labelBachelorDegree": "Bachelor's degree",
+			"labelExtensionCourse": "Extension courses"
 		}
 	},
 	"footer": {
 		"labelNavigation": {
 			"title": "Navigation",
-			"labelHome": "Menu principal",
-			"labelServices": "Mes domaines",
+			"labelHome": "Main menu",
+			"labelServices": "My fields",
 			"labelAboutMe": "Whoami",
-			"labelPortifolio": "Projets",
-			"labelExperience": "Expériences"
+			"labelPortifolio": "Projects",
+			"labelExperience": "Experiences"
 		},
 		"labelHost": {
-			"title": "HEBERGEMENT"
+			"title": "HOSTING"
 		},
 		"labelSourceCode": {
-			"title": "CODE SOURCE"
+			"title": "SOURCE CODE"
 		},
 		"labelTechs": {
 			"title": "TECHNOLOGIES"

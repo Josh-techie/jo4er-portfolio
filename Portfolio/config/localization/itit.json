@@ -1,0 +1,95 @@
+{
+	"id": "itit",
+	"navbarMenu": {
+		"labelHome": "MENU PRINCIPALE",
+		"labelServices": "LE MIE COMPETENZE",
+		"labelAboutMe": "WHOAMI",
+		"labelPortifolio": "PROGETTI",
+		"labelExperience": "ESPERIENZE"
+	},
+	"landingPage": {
+		"apresentationText": "Hello World,",
+		"name": "Youssef Abouyahia",
+		"resumeText": "✦ Ingegnere della Cybersecurity appassionato di pentesting, coltivo questa passione giocando regolarmente a CTF.\n\n✦ Creatore di automazioni, adoro costruire automazioni n8n per semplificare la mia vita quotidiana. Sia attraverso dispositivi IoT connessi che flussi di lavoro n8n personalizzati, cerco costantemente di automatizzare e ottimizzare i miei compiti. La mia prossima sfida: imparare a hackerare questi dispositivi IoT per comprendere meglio la loro sicurezza. È per questo che cerco uno stage per finanziare questa passione.",
+		"buttonText": "Chi sono"
+	},
+	"servicesOffer": {
+		"title": "Le Mie Competenze",
+		"cards": {
+			"forensique": {
+				"title": "Forense",
+				"contentText": "Competenze avanzate in forense digitale: acquisizione dati, analisi delle prove e sviluppo di strumenti di analisi."
+			},
+			"reverse": {
+				"title": "Reverse Engineering",
+				"contentText": "Solide competenze nell'analisi statica/dinamica di binari e nella deoffuscazione di malware."
+			},
+			"devsecops": {
+				"title": "DevSecOps",
+				"contentText": "Deployment e hosting di strumenti e soluzioni tenendo conto della sicurezza informatica e della conformità normativa. Competente in CI/CD e sicurezza delle reti."
+			},
+			"domotique": {
+				"title": "Domotica",
+				"contentText": "Hosting locale di soluzioni domotiche. Installazione, creazione e connessione di dispositivi domotici per automatizzare compiti quotidiani ripetitivi."
+			},
+			"developpement": {
+				"title": "Sviluppo",
+				"contentText": "Esperienza in Java, Python, C/C++, Javascript, Bash, Docker e altro. Uso avanzato di Github per la gestione delle versioni e la collaborazione su progetti personali e professionali."
+			}
+		}
+	},
+	"aboutMePage": {
+		"title": "WHOAMI?",
+		"paragraph_one": "Studente di Master 2 in Cybersecurity e Leadership di Crisi presso ESILV, attualmente cerco uno stage per aprile/maggio 2026.",
+		"paragraph_two": "Laureato come Ingegnere di Stato in cybersecurity e appassionato di pentesting, coltivo questa passione partecipando regolarmente a CTF.",
+		"paragraph_three": "Appassionato di IoT, ho completato diversi progetti di dispositivi connessi e sono molto impegnato nell'automazione dei compiti quotidiani. Nel mio tempo libero, esploro l'hardware hacking e imparo a hackerare questi piccoli dispositivi IoT per comprendere meglio la loro sicurezza. Tuttavia, l'IoT può essere costoso, e per perseguire questa passione di analizzare e sfruttare le vulnerabilità di questi dispositivi, ho bisogno di finanziare l'acquisto di attrezzature. Questo è uno dei motivi per cui cerco attivamente uno stage.",
+		"github_card": {
+			"followers": "follower",
+			"following": "segui",
+			"repos": "repository"
+		},
+		"alt_dev_img": "jo4er",
+		"cv": {
+			"file": "/cv/CV_Ita_YoussefAbouyahia.pdf",
+			"buttonText": "Scarica CV"
+		}
+	},
+	"portifolioPage": {
+		"title": "PROGETTI",
+		"labelFilter": "TUTTI",
+		"createdLabel": "Creato il"
+	},
+	"experiencePage": {
+		"title": "ESPERIENZE",
+		"timeline": {
+			"labelPosition": "Posizione",
+			"labelTitle": "Titolo",
+			"labelCompany": "Azienda",
+			"labelCategory": "Categoria",
+			"labelInstitution": "Istituzione",
+			"labelProfessionalCourse": "Corsi professionali",
+			"labelBachelorDegree": "Laurea",
+			"labelExtensionCourse": "Corsi di estensione"
+		}
+	},
+	"footer": {
+		"labelNavigation": {
+			"title": "Navigazione",
+			"labelHome": "Menu principale",
+			"labelServices": "Le mie competenze",
+			"labelAboutMe": "Whoami",
+			"labelPortifolio": "Progetti",
+			"labelExperience": "Esperienze"
+		},
+		"labelHost": {
+			"title": "HOSTING"
+		},
+		"labelSourceCode": {
+			"title": "CODICE SORGENTE"
+		},
+		"labelTechs": {
+			"title": "TECNOLOGIE"
+		},
+		"labelBuildVersion": "Versione"
+	}
+}

@@ -1,0 +1,95 @@
+{
+	"id": "eses",
+	"navbarMenu": {
+		"labelHome": "MENÚ PRINCIPAL",
+		"labelServices": "MIS ESPECIALIDADES",
+		"labelAboutMe": "WHOAMI",
+		"labelPortifolio": "PROYECTOS",
+		"labelExperience": "EXPERIENCIAS"
+	},
+	"landingPage": {
+		"apresentationText": "Hello World,",
+		"name": "Youssef Abouyahia",
+		"resumeText": "✦ Ingeniero de Ciberseguridad apasionado por el pentesting, alimento esta pasión jugando regularmente CTFs.\n\n✦ Creador de automatizaciones, me encanta construir automatizaciones n8n para simplificar mi vida diaria. Ya sea a través de dispositivos IoT conectados o flujos de trabajo n8n personalizados, busco constantemente automatizar y optimizar mis tareas. Mi próximo desafío: aprender a hackear estos dispositivos IoT para comprender mejor su seguridad. Es por eso que busco una pasantía para financiar esta pasión.",
+		"buttonText": "Sobre mí"
+	},
+	"servicesOffer": {
+		"title": "Mis Especialidades",
+		"cards": {
+			"forensique": {
+				"title": "Forense",
+				"contentText": "Habilidades avanzadas en forense digital: adquisición de datos, análisis de evidencias y desarrollo de herramientas de análisis."
+			},
+			"reverse": {
+				"title": "Ingeniería Inversa",
+				"contentText": "Sólidas habilidades en análisis estático/dinámico de binarios y desofuscación de malware."
+			},
+			"devsecops": {
+				"title": "DevSecOps",
+				"contentText": "Despliegue y alojamiento de herramientas y soluciones teniendo en cuenta la seguridad informática y el cumplimiento normativo. Competente en CI/CD y seguridad de redes."
+			},
+			"domotique": {
+				"title": "Domótica",
+				"contentText": "Alojamiento local de soluciones domóticas. Instalación, creación y conexión de dispositivos domóticos para automatizar tareas diarias repetitivas."
+			},
+			"developpement": {
+				"title": "Desarrollo",
+				"contentText": "Experiencia en Java, Python, C/C++, Javascript, Bash, Docker y más. Uso avanzado de Github para gestión de versiones y colaboración en proyectos personales y profesionales."
+			}
+		}
+	},
+	"aboutMePage": {
+		"title": "WHOAMI?",
+		"paragraph_one": "Estudiante de Master 2 en Ciberseguridad y Liderazgo de Crisis en ESILV, actualmente busco una pasantía para abril/mayo de 2026.",
+		"paragraph_two": "Graduado como Ingeniero de Estado en ciberseguridad y apasionado por el pentesting, alimento esta pasión participando regularmente en CTFs.",
+		"paragraph_three": "Apasionado por el IoT, he completado varios proyectos de dispositivos conectados y estoy muy involucrado en la automatización de tareas diarias. En mi tiempo libre, exploro hardware hacking y aprendo cómo romper estos pequeños dispositivos IoT para comprender mejor su seguridad. Sin embargo, el IoT puede ser costoso, y para seguir esta pasión de analizar y explotar las vulnerabilidades de estos dispositivos, necesito financiar la compra de equipos. Esta es una de las razones por las que busco activamente una pasantía.",
+		"github_card": {
+			"followers": "seguidores",
+			"following": "siguiendo",
+			"repos": "repositorios"
+		},
+		"alt_dev_img": "jo4er",
+		"cv": {
+			"file": "/cv/CV_Esp_YoussefAbouyahia.pdf",
+			"buttonText": "Descargar CV"
+		}
+	},
+	"portifolioPage": {
+		"title": "PROYECTOS",
+		"labelFilter": "TODOS",
+		"createdLabel": "Creado el"
+	},
+	"experiencePage": {
+		"title": "EXPERIENCIAS",
+		"timeline": {
+			"labelPosition": "Posición",
+			"labelTitle": "Título",
+			"labelCompany": "Empresa",
+			"labelCategory": "Categoría",
+			"labelInstitution": "Institución",
+			"labelProfessionalCourse": "Cursos profesionales",
+			"labelBachelorDegree": "Licenciatura",
+			"labelExtensionCourse": "Cursos de extensión"
+		}
+	},
+	"footer": {
+		"labelNavigation": {
+			"title": "Navegación",
+			"labelHome": "Menú principal",
+			"labelServices": "Mis especialidades",
+			"labelAboutMe": "Whoami",
+			"labelPortifolio": "Proyectos",
+			"labelExperience": "Experiencias"
+		},
+		"labelHost": {
+			"title": "ALOJAMIENTO"
+		},
+		"labelSourceCode": {
+			"title": "CÓDIGO FUENTE"
+		},
+		"labelTechs": {
+			"title": "TECNOLOGÍAS"
+		},
+		"labelBuildVersion": "Versión"
+	}
+}

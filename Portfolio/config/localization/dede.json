@@ -1,0 +1,95 @@
+{
+	"id": "dede",
+	"navbarMenu": {
+		"labelHome": "HAUPTMENÜ",
+		"labelServices": "MEINE FACHGEBIETE",
+		"labelAboutMe": "WHOAMI",
+		"labelPortifolio": "PROJEKTE",
+		"labelExperience": "ERFAHRUNGEN"
+	},
+	"landingPage": {
+		"apresentationText": "Hello World,",
+		"name": "Youssef Abouyahia",
+		"resumeText": "✦ Cybersicherheitsingenieur mit Leidenschaft für Pentesting, ich pflege diese Leidenschaft durch regelmäßiges Spielen von CTFs.\n\n✦ Schöpfer von Automatisierungen, ich liebe es, n8n-Automatisierungen zu erstellen, um mein tägliches Leben zu vereinfachen. Ob durch vernetzte IoT-Geräte oder benutzerdefinierte n8n-Workflows, ich strebe ständig danach, meine Aufgaben zu automatisieren und zu optimieren. Meine nächste Herausforderung: Lernen, diese IoT-Geräte zu hacken, um ihre Sicherheit besser zu verstehen. Aus diesem Grund suche ich ein Praktikum, um diese Leidenschaft zu finanzieren.",
+		"buttonText": "Über mich"
+	},
+	"servicesOffer": {
+		"title": "Meine Fachgebiete",
+		"cards": {
+			"forensique": {
+				"title": "Forensik",
+				"contentText": "Fortgeschrittene Fähigkeiten in digitaler Forensik: Datenerfassung, Beweisanalyse und Entwicklung von Analysetools."
+			},
+			"reverse": {
+				"title": "Reverse Engineering",
+				"contentText": "Solide Fähigkeiten in statischer/dynamischer Binäranalyse und Malware-Deobfuskierung."
+			},
+			"devsecops": {
+				"title": "DevSecOps",
+				"contentText": "Bereitstellung und Hosting von Tools und Lösungen unter Berücksichtigung der IT-Sicherheit und regulatorischen Compliance. Erfahren in CI/CD und Netzwerksicherheit."
+			},
+			"domotique": {
+				"title": "Hausautomation",
+				"contentText": "Lokales Hosting von Hausautomationslösungen. Installation, Erstellung und Verbindung von Hausautomationsgeräten zur Automatisierung repetitiver täglicher Aufgaben."
+			},
+			"developpement": {
+				"title": "Entwicklung",
+				"contentText": "Expertise in Java, Python, C/C++, Javascript, Bash, Docker und mehr. Erweiterte Nutzung von Github für Versionsverwaltung und Zusammenarbeit an persönlichen und professionellen Projekten."
+			}
+		}
+	},
+	"aboutMePage": {
+		"title": "WHOAMI?",
+		"paragraph_one": "Master-2-Student in Cybersicherheit und Krisenführung an der ESILV, ich suche derzeit ein Praktikum für April/Mai 2026.",
+		"paragraph_two": "Staatlich diplomierter Ingenieur in Cybersicherheit und leidenschaftlicher Pentester, ich pflege diese Leidenschaft durch regelmäßige Teilnahme an CTFs.",
+		"paragraph_three": "Leidenschaftlich für IoT, habe ich mehrere Projekte mit vernetzten Geräten abgeschlossen und bin stark in die Automatisierung täglicher Aufgaben involviert. In meiner Freizeit erkunde ich Hardware-Hacking und lerne, wie man diese kleinen IoT-Geräte hackt, um ihre Sicherheit besser zu verstehen. Allerdings kann IoT kostspielig sein, und um diese Leidenschaft des Analysierens und Ausnutzens von Schwachstellen dieser Geräte weiterzuverfolgen, muss ich den Kauf von Ausrüstung finanzieren. Dies ist einer der Gründe, warum ich aktiv ein Praktikum suche.",
+		"github_card": {
+			"followers": "Follower",
+			"following": "Folge ich",
+			"repos": "Repositories"
+		},
+		"alt_dev_img": "jo4er",
+		"cv": {
+			"file": "/cv/CV_De_YoussefAbouyahia.pdf",
+			"buttonText": "CV herunterladen"
+		}
+	},
+	"portifolioPage": {
+		"title": "PROJEKTE",
+		"labelFilter": "ALLE",
+		"createdLabel": "Erstellt am"
+	},
+	"experiencePage": {
+		"title": "ERFAHRUNGEN",
+		"timeline": {
+			"labelPosition": "Position",
+			"labelTitle": "Titel",
+			"labelCompany": "Unternehmen",
+			"labelCategory": "Kategorie",
+			"labelInstitution": "Institution",
+			"labelProfessionalCourse": "Berufliche Kurse",
+			"labelBachelorDegree": "Bachelor",
+			"labelExtensionCourse": "Erweiterungskurse"
+		}
+	},
+	"footer": {
+		"labelNavigation": {
+			"title": "Navigation",
+			"labelHome": "Hauptmenü",
+			"labelServices": "Meine Fachgebiete",
+			"labelAboutMe": "Whoami",
+			"labelPortifolio": "Projekte",
+			"labelExperience": "Erfahrungen"
+		},
+		"labelHost": {
+			"title": "HOSTING"
+		},
+		"labelSourceCode": {
+			"title": "QUELLCODE"
+		},
+		"labelTechs": {
+			"title": "TECHNOLOGIEN"
+		},
+		"labelBuildVersion": "Version"
+	}
+}
