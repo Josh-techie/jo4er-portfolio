@@ -238,13 +238,14 @@ export default function FooterPage(props) {
 	}, []);
 
 	async function getLastCommit() {
-		const response = await fetch("https://api.github.com/repos/joeseph/jo4er-portfolio/commits");
-		const json = await response.json();
 		try {
-			setCommit(json[0].sha.slice(0, 6));
+			const response = await fetch("https://api.github.com/repos/Josh-techie/jo4er-portfolio/commits");
+			if (!response.ok) throw new Error(`HTTP ${response.status}`);
+			const json = await response.json();
+			setCommit(json[0]?.sha?.slice(0, 6) || "unknown");
 		} catch (error) {
-			console.error(error);
-			setCommit("Error Loading...");
+			console.error("Failed to fetch commit:", error);
+			setCommit("dev");
 		}
 	}
 
