@@ -42,7 +42,7 @@ import { JournalBookmark } from "@styled-icons/bootstrap";
 //Custom components
 import Tooltip from "@/components/Tooltip";
 import FetchData from "@/components/RepositoryList";
-import projectsStatic from "@/data/projects";
+import { projectsByLanguage } from "@/data/projects";
 
 const ContainerGrid = styled.div`
 	display: grid;
@@ -308,6 +308,10 @@ export default function Portifolio() {
 	const [view, setView] = useState("grid");
 	const [stack, setStack] = useState("TODOS");
 
+	// Get projects based on current language
+	const currentLangId = language?.id || "frfr";
+	const projectsStatic = projectsByLanguage[currentLangId] || projectsByLanguage["frfr"];
+	
 	// Fetch data from my personnal GitHub account to list repositories
 	const [url, setURL] = useState("https://api.github.com/users/joeseph/repos");
 	const data = FetchData(url);

@@ -188,7 +188,7 @@ export default function LayoutTemplate({ children }) {
 		<>
 			<HeaderContainer>
 				<Fade direction="down" delay={100} duration={200}>
-					<Link style={{ textDecoration: "none" }} href="https://jo4er.com" passHref>
+					<Link style={{ textDecoration: "none" }} href="/" passHref>
 						<LogoContainer>
 							<LogoText>
 								<CaracteresLogo>&lt;</CaracteresLogo>jo4er <CaracteresLogo>/&gt;</CaracteresLogo>
@@ -221,7 +221,7 @@ export default function LayoutTemplate({ children }) {
 						</a>
 					</Fade>
 					<Fade direction="down" delay={500} duration={200}>
-						<a style={{ textDecoration: "none" }} href="#section-experiencia" onClick={scrollToSection}>
+						<a style={{ textDecoration: "none" }} href="#section-experience" onClick={scrollToSection}>
 							<NavbarOption>{language.navbarMenu.labelExperience}</NavbarOption>
 						</a>
 					</Fade>

@@ -7,7 +7,6 @@ import { SettingsContext } from "@/context/SettingsContext";
 
 //Custom components
 import SocialNetworkRowStack from "@/components/SocialNetworkRowStack";
-import LanguageSwitchButton from "@/components/LanguageSwitchButton";
 import { scrollToSection } from "./SmoothScroll";
 
 //Ícones
@@ -198,6 +197,11 @@ const ContainerBuildCopyright = styled.div`
 	}
 `;
 
+const CopyrightText = styled.span`
+	color: ${(props) => props.theme.colors.subtitle};
+	font-size: 14px;
+`;
+
 const ButtonUpToTop = styled.div`
 	/* position: fixed; */
 	display: flex;
@@ -269,7 +273,7 @@ export default function FooterPage(props) {
 						<a style={{ textDecoration: "none" }} href="#section-portifolio" onClick={scrollToSection}>
 							<FooterText>{language.footer.labelNavigation.labelPortifolio}</FooterText>
 						</a>
-						<a style={{ textDecoration: "none" }} href="#section-experiencia" onClick={scrollToSection}>
+						<a style={{ textDecoration: "none" }} href="#section-experience" onClick={scrollToSection}>
 							<FooterText>{language.footer.labelNavigation.labelExperience}</FooterText>
 						</a>
 					</SectionFooterMenu>
@@ -288,7 +292,7 @@ export default function FooterPage(props) {
 				<Fade triggerOnce delay={400}>
 					<SectionFooterMenu>
 						<FooterTextTitle>{language.footer.labelSourceCode.title}</FooterTextTitle>
-						<FooterTextExternalLink href="https://github.com/joeseph/jo4er-portfolio" target="_blank">
+						<FooterTextExternalLink href="https://github.com/Josh-techie/jo4er-portfolio" target="_blank">
 							Github
 						</FooterTextExternalLink>
 					</SectionFooterMenu>
@@ -301,20 +305,18 @@ export default function FooterPage(props) {
 						<FooterTextExternalLink href="https://pt-br.reactjs.org/" target="_blank">
 							React.Js
 						</FooterTextExternalLink>
-
-						<FooterTextExternalLink href="https://nextjs.org/" target="_blank">
-							Next.Js
+						<FooterTextExternalLink href="https://www.typescriptlang.org/" target="_blank">
+							TypeScript
 						</FooterTextExternalLink>
-
 						<FooterTextExternalLink href="https://styled-components.com/" target="_blank">
-							Styled components
+							Styled Components
 						</FooterTextExternalLink>
 					</SectionFooterMenu>
 				</Fade>
 			</div>
 			<Divider />
 			<ContainerBuildCopyright>
-				<LanguageSwitchButton />
+				<CopyrightText> 2025 Youssef Abouyahia</CopyrightText>
 				<SocialNetworkRowStack />
 				<div className="build-and-button-top">
 					<TextBuildProject>
