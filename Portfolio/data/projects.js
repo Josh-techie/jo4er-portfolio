@@ -234,7 +234,7 @@ export const projectsByLanguage = {
 			description: "Ein modernes, containerisiertes, responsives Portfolio, das mit Next.js erstellt wurde, um meine Arbeit und meinen technischen Hintergrund mit einem globalen Publikum zu teilen.",
 			language: "JavaScript/Next.js",
 			topics: ["javascript", "Nextdotjs", "docker"],
-			homepage: "https://jo4er.com",
+			homepage: "https://jo4er-portfolio.vercel.app/",
 			svn_url: "https://github.com/Josh-techie/jo4er-portfolio",
 			created_at: "2025-12-09T00:00:00Z",
 		},
