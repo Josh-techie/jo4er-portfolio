@@ -84,7 +84,7 @@ export const experiencesByLanguage = {
 			period: "July 2024 — September 2024",
 			role: "Team Leader",
 			company: "Orange Maroc",
-			location: "Agadir Metropolitan Area",
+			location: "Agadir, Morocco",
 			highlights: [
 				"Led multidisciplinary team of 6 to create ODAC (Optimal Doctor AI Companion), AI-powered smart bracelet for healthcare transformation",
 				"Designed end-to-end IoT and cloud solution using ESP32, AWS Cloud, and Amazon SageMaker for real-time health monitoring",
