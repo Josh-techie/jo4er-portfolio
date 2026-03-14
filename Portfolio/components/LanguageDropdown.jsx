@@ -103,17 +103,16 @@ const LangDropdown = styled.div`
 	width: 100%;
 	display: none;
 	background: ${(props) => props.theme.name === 'light' 
-		? 'rgba(0, 0, 0, 0.05)' 
-		: 'rgba(255, 255, 255, 0.08)'};
-	backdrop-filter: saturate(180%) blur(20px);
-	-webkit-backdrop-filter: saturate(180%) blur(20px);
+		? props.theme.colors.background 
+		: props.theme.colors.background};
 	border: 1px solid ${(props) => props.theme.name === 'light' 
-		? 'rgba(0, 0, 0, 0.1)' 
-		: 'rgba(255, 255, 255, 0.15)'};
+		? 'rgba(0, 0, 0, 0.15)' 
+		: 'rgba(255, 255, 255, 0.2)'};
 	border-radius: 5px;
 	box-shadow: ${(props) => props.theme.name === 'light' 
-		? '0 4px 12px rgba(0, 0, 0, 0.12)' 
-		: '0 4px 12px rgba(0, 0, 0, 0.4)'};
+		? '0 4px 12px rgba(0, 0, 0, 0.15)' 
+		: '0 4px 12px rgba(0, 0, 0, 0.5)'};
+	z-index: 100;
 
 	&.open {
 		display: block;

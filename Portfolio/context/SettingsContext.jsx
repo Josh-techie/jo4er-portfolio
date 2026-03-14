@@ -62,7 +62,7 @@ function detectBrowserLanguage() {
 }
 
 export default function SettingsProvider({ children }) {
-	const [theme, setTheme] = useState(darkTheme);
+	const [theme, setTheme] = useState(lightTheme);
 	const [languageId, setLanguageId] = useState("frfr");
 
 	// Detect browser language and theme on mount
