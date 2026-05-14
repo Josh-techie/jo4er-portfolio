@@ -35,6 +35,14 @@
 			"developpement": {
 				"title": "Développement",
 				"contentText": "Expertise en Java, Python, C/C++, Javascript, Bash, Docker et autres. Utilisation avancée de Github pour la gestion de versions et la collaboration sur des projets personnels et professionnels."
+			},
+			"pentesting": {
+				"title": "Pentesting",
+				"contentText": "Compétences complètes en tests de pénétration : évaluation des vulnérabilités, exploitation, tests de sécurité et création de rapports de sécurité. Expérience avec les outils et méthodologies de pentesting."
+			},
+			"grc": {
+				"title": "GRC",
+				"contentText": "Expertise en Gouvernance, Risque et Conformité : évaluation des risques, gestion de la conformité, support d'audit et mise en œuvre des cadres de gouvernance de la sécurité."
 			}
 		}
 	},

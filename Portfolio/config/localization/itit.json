@@ -35,6 +35,14 @@
 			"developpement": {
 				"title": "Sviluppo",
 				"contentText": "Esperienza in Java, Python, C/C++, Javascript, Bash, Docker e altro. Uso avanzato di Github per la gestione delle versioni e la collaborazione su progetti personali e professionali."
+			},
+			"pentesting": {
+				"title": "Pentesting",
+				"contentText": "Competenze complete nel penetration testing: valutazione delle vulnerabilità, sfruttamento, test di sicurezza e creazione di rapporti di sicurezza. Esperienza con strumenti e metodologie di penetration testing."
+			},
+			"grc": {
+				"title": "GRC",
+				"contentText": "Competenze in Governance, Risk e Compliance: valutazione dei rischi, gestione della conformità, supporto all'audit e implementazione di framework di governance della sicurezza."
 			}
 		}
 	},

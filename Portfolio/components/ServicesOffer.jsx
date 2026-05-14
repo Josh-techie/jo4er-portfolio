@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useRef, useEffect } from "react";
 import styled from "styled-components";
 import { Fade } from "react-awesome-reveal";
 
@@ -8,6 +8,8 @@ import { WindowWrench } from "@styled-icons/fluentui-system-filled/WindowWrench"
 import { ShieldKeyhole } from "@styled-icons/fluentui-system-filled/ShieldKeyhole";
 import { Homeassistant } from "@styled-icons/simple-icons/Homeassistant";
 import { CodeBlock } from "@styled-icons/boxicons-regular/CodeBlock";
+import { Lock } from "@styled-icons/feather/Lock";
+import { CheckShield } from "@styled-icons/boxicons-solid/CheckShield";
 
 //Contexto
 import { SettingsContext } from "@/context/SettingsContext";
@@ -18,25 +20,11 @@ const CardService = styled.div`
 	justify-content: flex-start;
 	flex-direction: column;
 	width: 275px;
+	min-width: 275px;
 	padding: 20px;
 	transition: all 0.3s ease;
 	border: 3px solid transparent;
-
-	//Espelhar elemento
-	//-webkit-box-reflect: below px linear-gradient(transparent, transparent, #0004);
-
-	/* 
-	transform-origin: center;
-	transform: perspective(800px) rotateY(25deg);
-	transition: 0.5s;
-
-	&:hover img {
-		opacity: 0.3;
-	}
-	&:hover {
-		transform: perspective(800px) rotateY(0deg);
-		opacity: 1;
-	} */
+	flex-shrink: 0;
 
 	svg {
 		color: ${(props) => props.theme.colors.branding};
@@ -74,22 +62,54 @@ const CardService = styled.div`
 	}
 `;
 
-const ContainerGrid = styled.div`
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	transition: all 0.3s ease;
+const ContainerScroll = styled.div`
+	display: flex;
+	overflow-x: auto;
 	gap: 20px;
-	justify-items: center;
+	width: 100%;
+	padding: 20px 0;
+	scroll-behavior: smooth;
+	
+	/* Hide scrollbar but keep scrolling functionality */
+	-ms-overflow-style: none;
+	scrollbar-width: none;
 
-	@media (max-width: 1200px) {
-		grid-template-columns: repeat(2, 1fr);
-		width: 85%;
+	&::-webkit-scrollbar {
+		display: none;
 	}
 
-	@media (max-width: 600px) {
-		grid-template-columns: repeat(1, 1fr);
-		//margin-top: 60px;
-		width: 100%;
+	@media (max-width: 1200px) {
+		justify-content: flex-start;
+	}
+`;
+
+const ScrollWrapper = styled.div`
+	position: relative;
+	width: 100%;
+`;
+
+const ScrollHint = styled.div`
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 40px;
+	pointer-events: none;
+	z-index: 1;
+	background: ${(props) =>
+		props.theme.name === "dark"
+			? `linear-gradient(to right, ${props.theme.colors.backgroundPage} 0%, rgba(22, 22, 22, 0) 90%)`
+			: `linear-gradient(to right, ${props.theme.colors.backgroundPage} 0%, rgba(255, 255, 255, 0) 90%)`};
+
+	&.right {
+		right: 0;
+		background: ${(props) =>
+			props.theme.name === "dark"
+				? `linear-gradient(to left, ${props.theme.colors.backgroundPage} 0%, rgba(22, 22, 22, 0) 90%)`
+				: `linear-gradient(to left, ${props.theme.colors.backgroundPage} 0%, rgba(255, 255, 255, 0) 90%)`};
+	}
+
+	@media (max-width: 1200px) {
+		display: none;
 	}
 `;
 
@@ -100,50 +120,106 @@ const SectionServices = styled.section`
 	flex-direction: column;
 	width: 100%;
 	padding-top: 60px;
+	position: relative;
 `;
+
+const PentestIcon = () => (
+	<svg viewBox="0 0 48 48" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+		<title>hacker-solid</title>
+		<g id="Layer_2" data-name="Layer 2">
+			<g id="invisible_box" data-name="invisible box">
+				<rect fill="none" />
+			</g>
+			<g id="Q3_icons" data-name="Q3 icons">
+				<g>
+					<path d="M24,30a60.3,60.3,0,0,1-13-1.3L7,27.6V40.2a1.9,1.9,0,0,0,1.5,1.9l12,2.9a2.4,2.4,0,0,0,2.1-.8L24,42.5l1.4,1.7A2.1,2.1,0,0,0,27,45h.5l12-2.9A1.9,1.9,0,0,0,41,40.2V27.6l-4,1.1A60.3,60.3,0,0,1,24,30Zm-7,8c-2,0-4-1.9-4-3s2-1,4-1,4,.9,4,2S19,38,17,38Zm14,0c-2,0-4-.9-4-2s2-2,4-2,4-.1,4,1S33,38,31,38Z" />
+					<path d="M39.4,16,37.3,6.2A4,4,0,0,0,33.4,3H29.1a3.9,3.9,0,0,0-3.4,1.9L24,7.8,22.3,4.9A3.9,3.9,0,0,0,18.9,3H14.6a4,4,0,0,0-3.9,3.2L8.6,16C4.5,17.3,2,19,2,21c0,3.9,9.8,7,22,7s22-3.1,22-7C46,19,43.5,17.3,39.4,16Z" />
+				</g>
+			</g>
+		</g>
+	</svg>
+);
+
+const serviceCards = [
+	{ Icon: MagnifyingGlass, key: "forensique" },
+	{ Icon: WindowWrench, key: "reverse" },
+	{ Icon: ShieldKeyhole, key: "devsecops" },
+	{ Icon: Homeassistant, key: "domotique" },
+	{ Icon: CodeBlock, key: "developpement" },
+	{ Icon: PentestIcon, key: "pentesting" },
+	{ Icon: CheckShield, key: "grc" },
+];
 
 export default function _ServicesOffer() {
 	const { language } = useContext(SettingsContext);
+	const scrollContainerRef = useRef(null);
+	const isAutoScrollRef = useRef(true);
+	const scrollDirectionRef = useRef(1);
+
+	useEffect(() => {
+		const scrollContainer = scrollContainerRef.current;
+		if (!scrollContainer) return;
+
+		const scrollWidth = scrollContainer.scrollWidth;
+		const clientWidth = scrollContainer.clientWidth;
+
+		// Only enable auto-scroll if content is larger than container
+		if (scrollWidth <= clientWidth) return;
+
+		const maxScrollLeft = scrollWidth - clientWidth;
+
+		const autoScroll = () => {
+			if (!isAutoScrollRef.current || !scrollContainer) return;
+
+			const nextPosition = scrollContainer.scrollLeft + scrollDirectionRef.current * 2;
+
+			if (nextPosition >= maxScrollLeft) {
+				scrollDirectionRef.current = -1;
+				scrollContainer.scrollLeft = maxScrollLeft;
+			} else if (nextPosition <= 0) {
+				scrollDirectionRef.current = 1;
+				scrollContainer.scrollLeft = 0;
+			} else {
+				scrollContainer.scrollLeft = nextPosition;
+			}
+		};
+
+		const scrollInterval = setInterval(autoScroll, 25);
+
+		const handleMouseEnter = () => {
+			isAutoScrollRef.current = false;
+		};
+		const handleMouseLeave = () => {
+			isAutoScrollRef.current = true;
+		};
+
+		scrollContainer.addEventListener("mouseenter", handleMouseEnter);
+		scrollContainer.addEventListener("mouseleave", handleMouseLeave);
+
+		return () => {
+			clearInterval(scrollInterval);
+			scrollContainer.removeEventListener("mouseenter", handleMouseEnter);
+			scrollContainer.removeEventListener("mouseleave", handleMouseLeave);
+		};
+	}, []);
 
 	return (
 		<SectionServices id="section-services">
-			<ContainerGrid>
-				<Fade triggerOnce delay={200}>
-					<CardService>
-						<MagnifyingGlass />
-						<h3>{language.servicesOffer.cards.forensique.title}</h3>
-						<p>{language.servicesOffer.cards.forensique.contentText}</p>
-					</CardService>
-				</Fade>
-				<Fade triggerOnce delay={400}>
-					<CardService>
-						<WindowWrench />
-						<h3>{language.servicesOffer.cards.reverse.title}</h3>
-						<p>{language.servicesOffer.cards.reverse.contentText}</p>
-					</CardService>
-				</Fade>
-				<Fade triggerOnce delay={600}>
-					<CardService>
-						<ShieldKeyhole />
-						<h3>{language.servicesOffer.cards.devsecops.title}</h3>
-						<p>{language.servicesOffer.cards.devsecops.contentText}</p>
-					</CardService>
-				</Fade>
-				<Fade triggerOnce delay={800}>
-					<CardService>
-						<Homeassistant />
-						<h3>{language.servicesOffer.cards.domotique.title}</h3>
-						<p>{language.servicesOffer.cards.domotique.contentText}</p>
-					</CardService>
-				</Fade>
-				<Fade triggerOnce delay={1000}>
-					<CardService>
-						<CodeBlock />
-						<h3>{language.servicesOffer.cards.developpement.title}</h3>
-						<p>{language.servicesOffer.cards.developpement.contentText}</p>
-					</CardService>
-				</Fade>
-			</ContainerGrid>
+			<ScrollWrapper>
+				<ScrollHint className="left" />
+				<ContainerScroll ref={scrollContainerRef}>
+					{serviceCards.map((card, index) => (
+						<Fade key={`service-${card.key}`} triggerOnce delay={200 + index * 200}>
+							<CardService>
+								<card.Icon />
+								<h3>{language.servicesOffer.cards[card.key].title}</h3>
+								<p>{language.servicesOffer.cards[card.key].contentText}</p>
+							</CardService>
+						</Fade>
+					))}
+				</ContainerScroll>
+				<ScrollHint className="right" />
+			</ScrollWrapper>
 		</SectionServices>
 	);
 }
