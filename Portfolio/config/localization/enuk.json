@@ -40,7 +40,7 @@
 				"title": "Offensive Security",
 				"contentText": "Skills in vulnerability assessment, exploitation, and security report writing. Experience with penetration testing methodologies and tools (Nmap, Metasploit, Hydra, Burp Suite..."			},
 			"grc": {
-				"title": "Governance, Risk, and Compliance",
+				"title": "GRC",
     "contentText": "Expertise in risk assessment, compliance management, audit support, and implementation of security frameworks. Frameworks include GDPR, ISO 27001, NIST CSF, PCI DSS, DORA, and NIS2."
 }
 		}
