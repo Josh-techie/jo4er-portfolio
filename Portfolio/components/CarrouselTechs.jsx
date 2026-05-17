@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 import { Amazonaws } from "@styled-icons/simple-icons/Amazonaws";
 import { GoogleCloud } from "@styled-icons/boxicons-logos/GoogleCloud";
@@ -41,217 +41,173 @@ import { Figma } from "@styled-icons/boxicons-logos/Figma";
 import { Adobephotoshop } from "@styled-icons/simple-icons/Adobephotoshop";
 import { Visualstudiocode } from "@styled-icons/simple-icons/Visualstudiocode";
 import { Trello } from "@styled-icons/boxicons-logos/Trello";
+import { Gnubash } from "@styled-icons/simple-icons/Gnubash";
+
+const scroll = keyframes`
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-50%);
+	}
+`;
 
 const Carrousel = styled.div`
-	margin-top: 20px;
-	margin-bottom: 20px;
+	display: grid;
+	gap: 14px;
+	margin: 20px 0;
+`;
 
-	svg {
-		width: 38px;
-		height: 38px;
-		color: #4b4b4b;
-		transition: all 0.3s ease;
-	}
+const Slider = styled.div`
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	min-height: 88px;
+	border-radius: 18px;
+	background: ${(props) => props.theme.colors.backgroundSecondary};
+	padding: 10px 0;
 
-	svg:hover {
-		transform: translateZ(20px);
-		color: ${(props) => props.theme.colors.branding};
-		scale: 1.3;
-	}
-
-	.slider {
-		height: 80px;
-		margin: auto;
-		position: relative;
-		width: 100%;
-		display: grid;
-		place-items: center;
-		overflow: hidden;
-		/* background-color: #ccc; */
-	}
-
-	//Slide track width = total number of slides (9x2=18) x individual slide width (250px)
-	.slide-track {
-		display: flex;
-		width: 100%;
-		animation: scroll 20s linear infinite;
-	}
-
-	.slide-track:hover {
-		animation-play-state: paused;
-	}
-
-	@keyframes scroll {
-		0% {
-			transform: translateX(0);
-		}
-		//Moves the slide track leftwards (-250px) by half (18 images / 2 = 9) of its width
-		100% {
-			transform: translateX(calc(-250px));
-		}
-	}
-
-	.slide {
-		height: 50px;
-		width: 100px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		//padding: 10px;
-		//perspective: 100px;
-		//background-color: #683636;
-		//margin: 10px;
-	}
-
-	.slider::before,
-	.slider::after {
-		background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+	&::before,
+	&::after {
 		content: "";
-		height: 100%;
 		position: absolute;
-		width: 15%;
+		top: 0;
+		height: 100%;
+		width: 12%;
+		pointer-events: none;
 		z-index: 2;
 	}
 
-	.slider::before {
+	&::before {
 		left: 0;
-		top: 0;
+		background: linear-gradient(to right, ${(props) => props.theme.colors.backgroundSecondary} 0%, rgba(255, 255, 255, 0) 100%);
 	}
 
-	.slider::after {
+	&::after {
 		right: 0;
-		top: 0;
-		transform: rotateZ(180deg);
+		background: linear-gradient(to left, ${(props) => props.theme.colors.backgroundSecondary} 0%, rgba(255, 255, 255, 0) 100%);
 	}
 `;
+
+const SlideTrack = styled.div`
+	display: inline-flex;
+	align-items: center;
+	gap: 0;
+	min-width: 100%;
+	animation: ${scroll} 24s linear infinite alternate;
+	animation-direction: ${(props) => (props.reverse ? "alternate-reverse" : "alternate")};
+	will-change: transform;
+
+	&:hover {
+		animation-play-state: paused;
+	}
+`;
+
+const Slide = styled.div`
+	width: 88px;
+	min-width: 88px;
+	height: 68px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	@media (max-width: 900px) {
+		width: 70px;
+		min-width: 70px;
+		height: 56px;
+	}
+`;
+
+const Icon = styled.div`
+	svg {
+		width: 32px;
+		height: 32px;
+		color: ${(props) => props.theme.colors.body};
+		transition: all 0.3s ease;
+	}
+
+	&:hover svg {
+		transform: scale(1.2);
+		color: ${(props) => props.theme.colors.branding};
+	}
+
+	@media (max-width: 900px) {
+		svg {
+			width: 26px;
+			height: 26px;
+		}
+	}
+`;
+
+const techIcons = [
+	Adobephotoshop,
+	Amazons3,
+	Visualstudiocode,
+	Trello,
+	Oracle,
+	Amazonaws,
+	GoogleCloud,
+	Firebase,
+	Mongodb,
+	Postgresql,
+	Sqlite,
+	Javascript,
+	Java,
+	ReactLogo,
+	Nextdotjs,
+	Python,
+	Flutter,
+	Django,
+	Nodejs,
+	LogoVercel,
+	Netlify,
+	Materialui,
+	Styledcomponents,
+	Css3,
+	Html5,
+	Git,
+	LogoBitbucket,
+	GithubOutline,
+	Api,
+	Bootstrap,
+	TailwindCss,
+	Mysql,
+	Linux,
+	Windows,
+	Android,
+	Ios,
+	Typescript,
+	Sass,
+	Jquery,
+	Figma,
+	Gnubash,
+];
+
+const renderSlides = (icons) =>
+	icons.map((IconComponent, index) => (
+		<Slide key={`${IconComponent.displayName}-${index}`}>
+			<Icon>
+				<IconComponent />
+			</Icon>
+		</Slide>
+	));
 
 export default function SlideTechs() {
 	return (
 		<Carrousel>
-			<div className="slider">
-				<div className="slide-track">
-					<div className="slide">
-						<Adobephotoshop />
-					</div>
-					<div className="slide">
-						<Amazons3 />
-					</div>
-					<div className="slide">
-						<Visualstudiocode />
-					</div>
-					<div className="slide">
-						<Trello />
-					</div>
-					<div className="slide">
-						<Oracle />
-					</div>
-					<div className="slide">
-						<Amazonaws />
-					</div>
-					<div className="slide">
-						<GoogleCloud />
-					</div>
-					<div className="slide">
-						<Firebase />
-					</div>
-					<div className="slide">
-						<Mongodb />
-					</div>
-					<div className="slide">
-						<Postgresql />
-					</div>
-					<div className="slide">
-						<Sqlite />
-					</div>
-					<div className="slide">
-						<Javascript />
-					</div>
-					<div className="slide">
-						<Java />
-					</div>
-					<div className="slide">
-						<ReactLogo />
-					</div>
-					<div className="slide">
-						<Nextdotjs />
-					</div>
-					<div className="slide">
-						<Python />
-					</div>
-					<div className="slide">
-						<Flutter />
-					</div>
-					<div className="slide">
-						<Django />
-					</div>
-					<div className="slide">
-						<Nodejs />
-					</div>
-					<div className="slide">
-						<LogoVercel />
-					</div>
-					<div className="slide">
-						<Netlify />
-					</div>
-					<div className="slide">
-						<Materialui />
-					</div>
-					<div className="slide">
-						<Styledcomponents />
-					</div>
-					<div className="slide">
-						<Css3 />
-					</div>
-					<div className="slide">
-						<Html5 />
-					</div>
-					<div className="slide">
-						<Git />
-					</div>
-					<div className="slide">
-						<LogoBitbucket />
-					</div>
-					<div className="slide">
-						<GithubOutline />
-					</div>
-					<div className="slide">
-						<Api />
-					</div>
-					<div className="slide">
-						<Bootstrap />
-					</div>
-					<div className="slide">
-						<TailwindCss />
-					</div>
-					<div className="slide">
-						<Mysql />
-					</div>
-					<div className="slide">
-						<Linux />
-					</div>
-					<div className="slide">
-						<Windows />
-					</div>
-					<div className="slide">
-						<Android />
-					</div>
-					<div className="slide">
-						<Ios />
-					</div>
-					<div className="slide">
-						<Typescript />
-					</div>
-					<div className="slide">
-						<Sass />
-					</div>
-					<div className="slide">
-						<Jquery />
-					</div>
-					<div className="slide">
-						<Figma />
-					</div>
-				</div>
-			</div>
+			<Slider>
+				<SlideTrack reverse={false}>
+					{renderSlides(techIcons)}
+					{renderSlides(techIcons)}
+				</SlideTrack>
+			</Slider>
+
+			<Slider>
+				<SlideTrack reverse={true}>
+					{renderSlides(techIcons)}
+					{renderSlides(techIcons)}
+				</SlideTrack>
+			</Slider>
 		</Carrousel>
 	);
 }

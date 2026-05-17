@@ -64,6 +64,7 @@ const CardService = styled.div`
 
 const ContainerScroll = styled.div`
 	display: flex;
+	flex-wrap: nowrap;
 	overflow-x: auto;
 	gap: 20px;
 	width: 100%;
@@ -150,6 +151,9 @@ const serviceCards = [
 	{ Icon: CheckShield, key: "grc" },
 ];
 
+const SCROLL_SPEED = 2; // px per interval
+const SCROLL_INTERVAL_MS = 10; // interval frequency in milliseconds
+
 export default function _ServicesOffer() {
 	const { language } = useContext(SettingsContext);
 	const scrollContainerRef = useRef(null);
@@ -160,19 +164,19 @@ export default function _ServicesOffer() {
 		const scrollContainer = scrollContainerRef.current;
 		if (!scrollContainer) return;
 
-		const scrollWidth = scrollContainer.scrollWidth;
-		const clientWidth = scrollContainer.clientWidth;
+		let maxScrollLeft = 0;
+		let scrollInterval = 0;
 
-		// Only enable auto-scroll if content is larger than container
-		if (scrollWidth <= clientWidth) return;
-
-		const maxScrollLeft = scrollWidth - clientWidth;
+		const updateMetrics = () => {
+			if (!scrollContainer) return;
+			maxScrollLeft = scrollContainer.scrollWidth - scrollContainer.clientWidth;
+		};
 
 		const autoScroll = () => {
 			if (!isAutoScrollRef.current || !scrollContainer) return;
+			if (maxScrollLeft <= 0) return;
 
-			const nextPosition = scrollContainer.scrollLeft + scrollDirectionRef.current * 2;
-
+			const nextPosition = scrollContainer.scrollLeft + scrollDirectionRef.current * SCROLL_SPEED;
 			if (nextPosition >= maxScrollLeft) {
 				scrollDirectionRef.current = -1;
 				scrollContainer.scrollLeft = maxScrollLeft;
@@ -184,8 +188,6 @@ export default function _ServicesOffer() {
 			}
 		};
 
-		const scrollInterval = setInterval(autoScroll, 25);
-
 		const handleMouseEnter = () => {
 			isAutoScrollRef.current = false;
 		};
@@ -193,13 +195,22 @@ export default function _ServicesOffer() {
 			isAutoScrollRef.current = true;
 		};
 
+		const handleResize = () => {
+			updateMetrics();
+		};
+
 		scrollContainer.addEventListener("mouseenter", handleMouseEnter);
 		scrollContainer.addEventListener("mouseleave", handleMouseLeave);
+		window.addEventListener("resize", handleResize);
+
+		updateMetrics();
+		scrollInterval = window.setInterval(autoScroll, SCROLL_INTERVAL_MS);
 
 		return () => {
-			clearInterval(scrollInterval);
+			window.clearInterval(scrollInterval);
 			scrollContainer.removeEventListener("mouseenter", handleMouseEnter);
 			scrollContainer.removeEventListener("mouseleave", handleMouseLeave);
+			window.removeEventListener("resize", handleResize);
 		};
 	}, []);
 

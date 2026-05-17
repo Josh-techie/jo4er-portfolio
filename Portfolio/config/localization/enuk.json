@@ -10,7 +10,7 @@
 	"landingPage": {
 		"apresentationText": "Hello World,",
 		"name": "Youssef Abouyahia",
-		"resumeText": "Cybersecurity Engineer passionate about pentesting, I nurture this passion by regularly playing CTFs.\n\nCreator of automations, I love building n8n automations to simplify my daily life. Whether through connected IoT devices or custom n8n workflows, I constantly seek to automate and optimize my tasks. My next challenge: learning to hack these IoT devices to better understand their security. This is why I am looking for an internship to fund this passion.",
+		"resumeText": "Cybersecurity Engineer passionate about offensive security and regularly competing in CTFs.\n \n I love self-hosting, managing my own infrastructure, and building custom n8n workflows to automate and optimize my daily life. Recently, I've become interested in IoT security to learn how to secure the very devices I build. My next challenge is to find a role where I can help protect organizations and society while doing what I love.",
 		"buttonText": "About me"
 	},
 	"servicesOffer": {
@@ -37,13 +37,12 @@
 				"contentText": "Expertise in Java, Python, C/C++, Javascript, Bash, Docker, and more. Advanced use of Github for version management and collaboration on personal and professional projects."
 			},
 			"pentesting": {
-				"title": "Pentesting",
-				"contentText": "Comprehensive penetration testing skills: vulnerability assessment, exploitation, security testing, and creating security reports. Experience with penetration testing tools and methodologies."
-			},
+				"title": "Offensive Security",
+				"contentText": "Skills in vulnerability assessment, exploitation, and security report writing. Experience with penetration testing methodologies and tools (Nmap, Metasploit, Hydra, Burp Suite..."			},
 			"grc": {
-				"title": "GRC",
-				"contentText": "Governance, Risk, and Compliance expertise: risk assessment, compliance management, audit support, and security governance frameworks implementation."
-			}
+				"title": "Governance, Risk, and Compliance",
+    "contentText": "Expertise in risk assessment, compliance management, audit support, and implementation of security frameworks. Frameworks include GDPR, ISO 27001, NIST CSF, PCI DSS, DORA, and NIS2."
+}
 		}
 	},
 	"aboutMePage": {

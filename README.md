@@ -119,7 +119,7 @@ MIT License - feel free to use this portfolio as a template for your own.
 
 ## Contact
 
-- **Website**: [jo4er.com](https://jo4er-portfolio.vercel.app/)
+- **Website**: [jo4er.me](https://jo4er.me)
 - **GitHub**: [@Josh-techie](https://github.com/Josh-techie)
 
 ---
