@@ -193,12 +193,20 @@ const CardHeader = styled.div`
 `;
 
 const RoleTitle = styled.h3`
-	font-size: 24px;
+	font-size: 20px;
 	font-weight: 700;
 	background: linear-gradient(to right, ${(props) => props.theme.name === 'light' ? '#333333' : '#ffffff'}, ${(props) => props.theme.name === 'light' ? '#666666' : '#94a3b8'});
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
+
+	@media (min-width: 768px) {
+		font-size: 22px;
+	}
+
+	@media (min-width: 1024px) {
+		font-size: 24px;
+	}
 `;
 
 const CompanyInfo = styled.div`
@@ -207,19 +215,29 @@ const CompanyInfo = styled.div`
 	gap: 8px;
 	color: ${(props) => props.theme.name === 'light' ? '#555555' : props.theme.colors.branding};
 	font-weight: 600;
+	font-size: 14px;
+
+	@media (min-width: 768px) {
+		font-size: 15px;
+	}
+
+	@media (min-width: 1024px) {
+		font-size: 16px;
+	}
 
 	svg {
-		width: 20px;
-		height: 20px;
-		
-		@media (max-width: 768px) {
+		width: 16px;
+		height: 16px;
+		flex-shrink: 0;
+
+		@media (min-width: 768px) {
 			width: 18px;
 			height: 18px;
 		}
-		
-		@media (max-width: 480px) {
-			width: 16px;
-			height: 16px;
+
+		@media (min-width: 1024px) {
+			width: 20px;
+			height: 20px;
 		}
 	}
 `;
@@ -233,25 +251,41 @@ const HighlightsList = styled.div`
 
 const HighlightItem = styled.div`
 	display: flex;
-	gap: 12px;
+	gap: 8px;
 	align-items: flex-start;
 
+	@media (min-width: 768px) {
+		gap: 10px;
+	}
+
+	@media (min-width: 1024px) {
+		gap: 12px;
+	}
+
 	svg {
-		width: 20px;
-		height: 20px;
+		width: 16px;
+		height: 16px;
+		min-width: 16px;
+		min-height: 16px;
 		color: ${(props) => props.theme.colors.branding};
-		margin-top: 4px;
-		shrink: 0;
+		margin-top: 2px;
+		flex-shrink: 0;
 		transition: transform 0.3s ease;
-		
-		@media (max-width: 768px) {
+
+		@media (min-width: 768px) {
 			width: 18px;
 			height: 18px;
+			min-width: 18px;
+			min-height: 18px;
+			margin-top: 3px;
 		}
-		
-		@media (max-width: 480px) {
-			width: 16px;
-			height: 16px;
+
+		@media (min-width: 1024px) {
+			width: 20px;
+			height: 20px;
+			min-width: 20px;
+			min-height: 20px;
+			margin-top: 4px;
 		}
 	}
 
@@ -261,9 +295,14 @@ const HighlightItem = styled.div`
 
 	p {
 		color: ${(props) => props.theme.name === 'light' ? '#666666' : '#94a3b8'};
-		font-size: 14px;
+		font-size: 13px;
 		line-height: 1.6;
 		transition: color 0.3s ease;
+		flex: 1;
+
+		@media (min-width: 768px) {
+			font-size: 14px;
+		}
 
 		@media (min-width: 1024px) {
 			font-size: 16px;

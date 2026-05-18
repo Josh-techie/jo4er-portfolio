@@ -2,7 +2,7 @@ export const experiencesByLanguage = {
 	frfr: [
 		{
 			period: "Mars 2025 — Août 2025",
-			role: "Développeur DevOps/DevSecOps",
+			role: "Ingénieur DevOps/DevSecOps",
 			company: "VOID",
 			location: "Agadir, Maroc",
 			highlights: [
@@ -60,7 +60,7 @@ export const experiencesByLanguage = {
 	enuk: [
 		{
 			period: "March 2025 — August 2025",
-			role: "DevOps/DevSecOps Developer",
+			role: "DevOps/DevSecOps Engineer",
 			company: "VOID",
 			location: "Agadir, Morocco",
 			highlights: [
@@ -119,7 +119,7 @@ export const experiencesByLanguage = {
 	eses: [
 		{
 			period: "Marzo 2025 — Agosto 2025",
-			role: "Desarrollador DevOps/DevSecOps",
+			role: "Ingeniero DevOps/DevSecOps",
 			company: "VOID",
 			location: "Agadir, Marruecos",
 			highlights: [
@@ -177,7 +177,7 @@ export const experiencesByLanguage = {
 	itit: [
 		{
 			period: "Marzo 2025 — Agosto 2025",
-			role: "Sviluppatore DevOps/DevSecOps",
+			role: "Ingegnere DevOps/DevSecOps",
 			company: "VOID",
 			location: "Agadir, Marocco",
 			highlights: [
@@ -235,7 +235,7 @@ export const experiencesByLanguage = {
 	dede: [
 		{
 			period: "März 2025 — August 2025",
-			role: "DevOps/DevSecOps Entwickler",
+			role: "DevOps/DevSecOps Ingenieur",
 			company: "VOID",
 			location: "Agadir, Marokko",
 			highlights: [
