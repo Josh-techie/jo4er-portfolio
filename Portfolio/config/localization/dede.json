@@ -48,9 +48,9 @@
 	},
 	"aboutMePage": {
 		"title": "WHOAMI?",
-		"paragraph_one": "Master-2-Student in Cybersicherheit und Krisenführung an der ESILV, ich suche derzeit ein Praktikum für April/Mai 2026.",
-		"paragraph_two": "Staatlich diplomierter Ingenieur in Cybersicherheit und leidenschaftlicher Pentester, ich pflege diese Leidenschaft durch regelmäßige Teilnahme an CTFs.",
-		"paragraph_three": "Leidenschaftlich für IoT, habe ich mehrere Projekte mit vernetzten Geräten abgeschlossen und bin stark in die Automatisierung täglicher Aufgaben involviert. In meiner Freizeit erkunde ich Hardware-Hacking und lerne, wie man diese kleinen IoT-Geräte hackt, um ihre Sicherheit besser zu verstehen. Allerdings kann IoT kostspielig sein, und um diese Leidenschaft des Analysierens und Ausnutzens von Schwachstellen dieser Geräte weiterzuverfolgen, muss ich den Kauf von Ausrüstung finanzieren. Dies ist einer der Gründe, warum ich aktiv ein Praktikum suche.",
+		"paragraph_one": "Cybersicherheitsingenieur mit 3 Jahren Erfahrung, kürzlich mit einem Master in Cybersicherheit und Krisenführung von der ESILV abgeschlossen. Ich spezialisiere mich auf die Absicherung von Cloud- und On-Premise-Infrastrukturen, Pentesting und Governance, Risiko und Compliance (GRC).",
+		"paragraph_two": "Mein Ansatz: Brechen, um zu verstehen, verstehen, um besser zu sichern. Ich entwickle gerne Angriffsszenarien, teste Evasionstechniken und identifiziere Schwachstellen, bevor andere sie ausnutzen. Ich navigiere sowohl in Code und Infrastruktur als auch in Compliance-Audits (ISO 27001, NIS2, DSGVO, DORA) und Risikoanalysen (EBIOS RM).",
+		"paragraph_three": "Zertifizierter Professional Cloud Security Engineer (Google) und leidenschaftlich für IoT und Hardware-Hacking, nehme ich regelmäßig an CTFs teil, um meine Fähigkeiten zu schärfen und über die neuesten Exploit-Techniken auf dem Laufenden zu bleiben. Ich suche eine Vollzeitstelle ab Oktober 2026, um zur Sicherung kritischer und risikoreicher Umgebungen beizutragen.",
 		"github_card": {
 			"followers": "Follower",
 			"following": "Folge ich",

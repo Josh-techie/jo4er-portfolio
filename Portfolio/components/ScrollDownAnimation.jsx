@@ -11,15 +11,52 @@ import ScrollDownLottieLight from "@/public/lotties/scroll-down-light.json";
 import { scrollToSection } from "./SmoothScroll";
 
 const ContainerLottie = styled.div`
-	width: 80px;
-	height: 80px;
+	width: 50px;
+	height: 50px;
+	max-width: 50px;
+	max-height: 50px;
 	transition: all 0.3s ease;
 	z-index: 1;
 	position: absolute;
-	bottom: 40px;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
 
-	@media (max-width: 601px) {
-		display: none;
+	@media (min-width: 480px) {
+		width: 60px;
+		height: 60px;
+		max-width: 60px;
+		max-height: 60px;
+		bottom: 30px;
+	}
+
+	@media (min-width: 768px) {
+		width: 70px;
+		height: 70px;
+		max-width: 70px;
+		max-height: 70px;
+		bottom: 35px;
+	}
+
+	@media (min-width: 1024px) {
+		width: 80px;
+		height: 80px;
+		max-width: 80px;
+		max-height: 80px;
+		bottom: 40px;
+	}
+
+	/* Ensure proper aspect ratio on all devices */
+	a {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+
+	/* Improve touch target size for mobile */
+	@media (hover: none) and (pointer: coarse) {
+		min-width: 44px;
+		min-height: 44px;
 	}
 `;
 

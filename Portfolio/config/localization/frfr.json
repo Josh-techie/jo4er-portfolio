@@ -48,9 +48,9 @@
 	},
 	"aboutMePage": {
 		"title": "WHOAMI?",
-		"paragraph_one": "Étudiant en Master 2 Cybersécurité et Leadership de Crise à l'ESILV, je suis actuellement à la recherche d'un stage pour avril/mai 2026.",
-		"paragraph_two": "Diplômé ingénieur d'État en cybersécurité et passionné par le pentesting, j'alimente cette passion en participant régulièrement à des CTF.",
-		"paragraph_three": "Passionné d'IoT, j'ai réalisé plusieurs projets de dispositifs connectés et je suis très investi dans l'automatisation de tâches quotidiennes. Dans mon temps libre, j'explore le hardware hacking et j'apprends à casser ces petits dispositifs IoT pour mieux comprendre leur sécurité. Cependant, l'IoT peut être coûteux, et pour poursuivre cette passion qui consiste à analyser et exploiter les vulnérabilités de ces appareils, j'ai besoin de financer l'achat de matériel. C'est l'une des raisons pour lesquelles je recherche activement un stage.",
+		"paragraph_one": "Ingénieur en cybersécurité avec 3 ans d'expérience, récemment diplômé d'un Master en Cybersécurité et Leadership de Crise à l'ESILV. Je me spécialise dans la sécurisation d'infrastructures cloud et on-premise, le pentesting, et la gouvernance des risques (GRC).",
+		"paragraph_two": "Mon approche : casser pour comprendre, comprendre pour mieux sécuriser. J'aime développer des scénarios d'attaque, tester des techniques d'évasion et identifier les failles avant que d'autres ne les exploitent. Je navigue autant dans le code et l'infrastructure que dans les audits de conformité (ISO 27001, NIS2, RGPD, DORA) et l'analyse de risques (EBIOS RM).",
+		"paragraph_three": "Certifié Professional Cloud Security Engineer (Google) et passionné par l'IoT et le hardware hacking, je participe régulièrement à des CTF pour affûter mes compétences et rester à jour sur les dernières techniques d'exploitation. Je recherche un CDI à partir d'octobre 2026 pour contribuer à la sécurisation d'environnements critiques et à fort enjeu.",
 		"github_card": {
 			"followers": "followers",
 			"following": "following",
