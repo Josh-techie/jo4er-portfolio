@@ -1,6 +1,16 @@
 export const experiencesByLanguage = {
 	frfr: [
 		{
+			period: "Avril 2026 — Présent",
+			role: "Consultant Cybersécurité",
+			company: "Ayming",
+			location: "Paris, France",
+			highlights: [
+				"Piloté l'audit du cycle PDCA (Plan-Do-Check-Act) avec un focus sur la phase Check conformément à ISO 27001, structurant la documentation de gouvernance et la revue des risques en vue de l'audit, renforçant la traçabilité et améliorant la posture de conformité de 35%",
+				"Réalisé 3 tests d'intrusion (2 sur solutions clients en pré-déploiement et 1 en interne), identifiant des faiblesses critiques et améliorant la résilience des systèmes avant mise en production",
+			],
+		},
+		{
 			period: "Mars 2025 — Août 2025",
 			role: "Ingénieur DevOps/DevSecOps",
 			company: "VOID",
@@ -58,6 +68,16 @@ export const experiencesByLanguage = {
 		},
 	],
 	enuk: [
+		{
+			period: "April 2026 — Present",
+			role: "Cybersecurity Consultant",
+			company: "Ayming",
+			location: "Paris, France",
+			highlights: [
+				"Led PDCA (Plan-Do-Check-Act) cycle audit with focus on Check phase in compliance with ISO 27001, structuring governance documentation and risk review for audit preparation, strengthening traceability and improving compliance posture by 35%",
+				"Conducted 3 penetration tests (2 on client solutions in pre-deployment and 1 internally), identifying critical weaknesses and improving system resilience before production deployment",
+			],
+		},
 		{
 			period: "March 2025 — August 2025",
 			role: "DevOps/DevSecOps Engineer",
@@ -118,6 +138,16 @@ export const experiencesByLanguage = {
 	],
 	eses: [
 		{
+			period: "Abril 2026 — Presente",
+			role: "Consultor de Ciberseguridad",
+			company: "Ayming",
+			location: "París, Francia",
+			highlights: [
+				"Lideré la auditoría del ciclo PDCA (Plan-Do-Check-Act) con enfoque en la fase Check conforme a ISO 27001, estructurando la documentación de gobernanza y la revisión de riesgos para la auditoría, reforzando la trazabilidad y mejorando la postura de cumplimiento en un 35%",
+				"Realicé 3 pruebas de penetración (2 en soluciones de clientes en pre-despliegue y 1 interna), identificando debilidades críticas y mejorando la resiliencia de los sistemas antes de la puesta en producción",
+			],
+		},
+		{
 			period: "Marzo 2025 — Agosto 2025",
 			role: "Ingeniero DevOps/DevSecOps",
 			company: "VOID",
@@ -176,6 +206,16 @@ export const experiencesByLanguage = {
 	],
 	itit: [
 		{
+			period: "Aprile 2026 — Presente",
+			role: "Consulente di Cybersecurity",
+			company: "Ayming",
+			location: "Parigi, Francia",
+			highlights: [
+				"Guidato l'audit del ciclo PDCA (Plan-Do-Check-Act) con focus sulla fase Check conforme a ISO 27001, strutturando la documentazione di governance e la revisione dei rischi per l'audit, rafforzando la tracciabilità e migliorando la postura di conformità del 35%",
+				"Eseguito 3 test di penetrazione (2 su soluzioni clienti in pre-deployment e 1 interno), identificando debolezze critiche e migliorando la resilienza dei sistemi prima della messa in produzione",
+			],
+		},
+		{
 			period: "Marzo 2025 — Agosto 2025",
 			role: "Ingegnere DevOps/DevSecOps",
 			company: "VOID",
@@ -233,6 +273,16 @@ export const experiencesByLanguage = {
 		},
 	],
 	dede: [
+		{
+			period: "April 2026 — Heute",
+			role: "Cybersicherheitsberater",
+			company: "Ayming",
+			location: "Paris, Frankreich",
+			highlights: [
+				"Leitete PDCA-Zyklus-Audit (Plan-Do-Check-Act) mit Fokus auf Check-Phase gemäß ISO 27001, strukturierte Governance-Dokumentation und Risikobewertung für Audit-Vorbereitung, stärkte Rückverfolgbarkeit und verbesserte Compliance-Haltung um 35%",
+				"Führte 3 Penetrationstests durch (2 auf Kundenlösungen im Pre-Deployment und 1 intern), identifizierte kritische Schwachstellen und verbesserte System-Resilienz vor Produktionsstart",
+			],
+		},
 		{
 			period: "März 2025 — August 2025",
 			role: "DevOps/DevSecOps Ingenieur",
