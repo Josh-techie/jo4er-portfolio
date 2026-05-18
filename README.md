@@ -74,10 +74,24 @@ Portfolio/
 
 ## Getting Started
 
-### Prerequisites
+- Clone the repository:
+```
+git clone https://github.com/Josh-techie/jo4er-portfolio
+```
 
-- Node.js 20+
-- Docker (optional)
+- Change directory into the directory:
+```
+cd jo4er-poltfolio\Portfolio
+```
+- Install the dependencies:
+```
+npm install
+```
+- Run the project locally:
+```
+npm run dev
+```
+- Finally you can view the project locally on port 3000.
 
 ## Customization
 
