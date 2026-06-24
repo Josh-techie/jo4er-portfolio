@@ -1,0 +1,14 @@
+# Security Disclosure Policy
+# This file complies with RFC 9116 (https://www.rfc-editor.org/rfc/rfc9116.html)
+
+Contact: mailto:youssef.abouyahia@edu.devinci.fr
+Expires: 2027-12-31T23:59:59.000Z
+Preferred-Languages: en, fr
+Canonical: https://jo4er.me/.well-known/security.txt
+
+# Security Policy
+Policy: If you discover a security vulnerability, please report it responsibly.
+
+# Acknowledgments
+Acknowledgments: We appreciate responsible disclosure and will acknowledge security researchers who help us improve our security posture.
+

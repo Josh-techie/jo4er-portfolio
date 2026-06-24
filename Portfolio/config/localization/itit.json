@@ -48,9 +48,9 @@
 	},
 	"aboutMePage": {
 		"title": "WHOAMI?",
-		"paragraph_one": "Studente di Master 2 in Cybersecurity e Leadership di Crisi presso ESILV, attualmente cerco uno stage per aprile/maggio 2026.",
-		"paragraph_two": "Laureato come Ingegnere di Stato in cybersecurity e appassionato di pentesting, coltivo questa passione partecipando regolarmente a CTF.",
-		"paragraph_three": "Appassionato di IoT, ho completato diversi progetti di dispositivi connessi e sono molto impegnato nell'automazione dei compiti quotidiani. Nel mio tempo libero, esploro l'hardware hacking e imparo a hackerare questi piccoli dispositivi IoT per comprendere meglio la loro sicurezza. Tuttavia, l'IoT può essere costoso, e per perseguire questa passione di analizzare e sfruttare le vulnerabilità di questi dispositivi, ho bisogno di finanziare l'acquisto di attrezzature. Questo è uno dei motivi per cui cerco attivamente uno stage.",
+		"paragraph_one": "Ingegnere in cybersecurity con 3 anni di esperienza, recentemente laureato con un Master in Cybersecurity e Leadership di Crisi presso ESILV. Mi specializzo nella sicurezza di infrastrutture cloud e on-premise, pentesting e governance dei rischi (GRC).",
+		"paragraph_two": "Il mio approccio: rompere per comprendere, comprendere per proteggere meglio. Mi piace sviluppare scenari di attacco, testare tecniche di evasione e identificare vulnerabilità prima che altri le sfruttino. Navigo sia nel codice e nell'infrastruttura che negli audit di conformità (ISO 27001, NIS2, GDPR, DORA) e nell'analisi dei rischi (EBIOS RM).",
+		"paragraph_three": "Certificato Professional Cloud Security Engineer (Google) e appassionato di IoT e hardware hacking, partecipo regolarmente a CTF per affinare le mie competenze e rimanere aggiornato sulle ultime tecniche di sfruttamento. Cerco una posizione a tempo pieno a partire da ottobre 2026 per contribuire alla sicurezza di ambienti critici e ad alto rischio.",
 		"github_card": {
 			"followers": "follower",
 			"following": "segui",
