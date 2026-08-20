@@ -4,6 +4,9 @@ import { MailSend } from "@styled-icons/boxicons-regular/MailSend";
 import { LinkedinSquare } from "@styled-icons/boxicons-logos/LinkedinSquare";
 import { Twitter } from "@styled-icons/boxicons-logos/Twitter";
 import { Github } from "@styled-icons/bootstrap/Github";
+import { Tryhackme } from "@styled-icons/simple-icons/Tryhackme";
+import { Hackthebox } from "@styled-icons/simple-icons/Hackthebox";
+import { FlagCheckered } from "@styled-icons/boxicons-solid/FlagCheckered";
 
 const SocialMediaContainer = styled.div`
 	display: flex;
@@ -59,7 +62,8 @@ const ButtonSocialMediaIcon = styled.a`
 	} */
 `;
 
-export default function SocialNetworkRowStack() {
+// showPentestPlatforms exibe os perfis de CTF/pentest (usado apenas na seção "whoami")
+export default function SocialNetworkRowStack({ showPentestPlatforms = false }) {
 	return (
 		<SocialMediaContainer>
 			<ButtonSocialMediaIcon href="https://github.com/Josh-techie" target="_blank">
@@ -77,6 +81,36 @@ export default function SocialNetworkRowStack() {
 			<ButtonSocialMediaIcon href="https://x.com/JoesephAb" target="_blank">
 				<Twitter />
 			</ButtonSocialMediaIcon>
+
+			{showPentestPlatforms && (
+				<>
+					<ButtonSocialMediaIcon href="https://tryhackme.com/p/Jo4er" target="_blank" rel="noopener noreferrer" title="TryHackMe" aria-label="TryHackMe" data-splitbee-event="tryhackme-access">
+						<Tryhackme />
+					</ButtonSocialMediaIcon>
+
+					<ButtonSocialMediaIcon
+						href="https://profile.hackthebox.com/profile/019f275e-a9a1-71b9-adf0-85f939c03543"
+						target="_blank"
+						rel="noopener noreferrer"
+						title="Hack The Box"
+						aria-label="Hack The Box"
+						data-splitbee-event="hackthebox-access"
+					>
+						<Hackthebox />
+					</ButtonSocialMediaIcon>
+
+					<ButtonSocialMediaIcon
+						href="https://learn.cylabacademy.org/users/Jo4er"
+						target="_blank"
+						rel="noopener noreferrer"
+						title="CyLab Academy (ex-picoCTF)"
+						aria-label="CyLab Academy (ex-picoCTF)"
+						data-splitbee-event="cylab-access"
+					>
+						<FlagCheckered />
+					</ButtonSocialMediaIcon>
+				</>
+			)}
 		</SocialMediaContainer>
 	);
 }

@@ -319,7 +319,7 @@ export default function AProposDeMoi(props) {
 							<p>{language.aboutMePage.paragraph_two}</p>
 							<p>{language.aboutMePage.paragraph_three}</p>
 							<div className="tech-and-cv">
-								<SocialNetworkRowStack />
+								<SocialNetworkRowStack showPentestPlatforms />
 								<ButtonCV href={language.aboutMePage.cv.file} download data-splitbee-event="Download CV">
 									{language.aboutMePage.cv.buttonText}
 								</ButtonCV>
