@@ -226,6 +226,11 @@ export default function LayoutTemplate({ children }) {
 						</a>
 					</Fade>
 					<Fade direction="down" delay={600} duration={200}>
+						<a style={{ textDecoration: "none" }} href="#section-certificates" onClick={scrollToSection}>
+							<NavbarOption>{language.navbarMenu.labelCertificates}</NavbarOption>
+						</a>
+					</Fade>
+					<Fade direction="down" delay={700} duration={200}>
 						<ControlsContainer>
 							<LanguageDropdown />
 							<SwitchThemeButton />

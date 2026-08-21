@@ -5,7 +5,8 @@
 		"labelServices": "MY FIELDS",
 		"labelAboutMe": "WHOAMI",
 		"labelPortifolio": "PROJECTS",
-		"labelExperience": "EXPERIENCES"
+		"labelExperience": "EXPERIENCES",
+		"labelCertificates": "CERTIFICATIONS"
 	},
 	"landingPage": {
 		"apresentationText": "Hello World,",
@@ -38,11 +39,12 @@
 			},
 			"pentesting": {
 				"title": "Offensive Security",
-				"contentText": "Skills in vulnerability assessment, exploitation, and security report writing. Experience with penetration testing methodologies and tools (Nmap, Metasploit, Hydra, Burp Suite..."			},
+				"contentText": "Skills in vulnerability assessment, exploitation, and security report writing. Experience with penetration testing methodologies and tools (Nmap, Metasploit, Hydra, Burp Suite..."
+			},
 			"grc": {
 				"title": "GRC",
-    "contentText": "Expertise in risk assessment, compliance management, audit support, and implementation of security frameworks. Frameworks include GDPR, ISO 27001, NIST CSF, PCI DSS, DORA, and NIS2."
-}
+				"contentText": "Expertise in risk assessment, compliance management, audit support, and implementation of security frameworks. Frameworks include GDPR, ISO 27001, NIST CSF, PCI DSS, DORA, and NIS2."
+			}
 		}
 	},
 	"aboutMePage": {
@@ -79,6 +81,35 @@
 			"labelExtensionCourse": "Extension courses"
 		}
 	},
+	"certificatesPage": {
+		"title": "CERTIFICATIONS",
+		"filterAll": "ALL",
+		"categories": {
+			"cloud": "Cloud",
+			"offensive": "Offensive",
+			"grc": "GRC",
+			"fundamentals": "Fundamentals",
+			"data": "Data & AI",
+			"languages": "Languages",
+			"other": "Other"
+		},
+		"status": {
+			"active": "Valid",
+			"inProgress": "In progress",
+			"expired": "Expired"
+		},
+		"issuedLabel": "Issued",
+		"expectedLabel": "Expected",
+		"expiresLabel": "Expires",
+		"credentialLabel": "ID",
+		"verifyLabel": "Verify credential",
+		"viewLabel": "View certificate",
+		"emptyState": "No certification in this category yet."
+	},
+	"a11y": {
+		"backToTop": "Back to top",
+		"toggleTheme": "Switch between light and dark theme"
+	},
 	"footer": {
 		"labelNavigation": {
 			"title": "Navigation",
@@ -86,7 +117,8 @@
 			"labelServices": "My fields",
 			"labelAboutMe": "Whoami",
 			"labelPortifolio": "Projects",
-			"labelExperience": "Experiences"
+			"labelExperience": "Experiences",
+			"labelCertificates": "Certifications"
 		},
 		"labelHost": {
 			"title": "HOSTING"

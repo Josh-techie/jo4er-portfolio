@@ -56,6 +56,12 @@ const SwitchButton = styled.div`
 		justify-content: center;
 	}
 
+	/* the checkbox itself is visually hidden, so surface focus on the slider */
+	input:focus-visible + .slider {
+		outline: 2px solid ${(props) => props.theme.colors.branding};
+		outline-offset: 2px;
+	}
+
 	input:checked + .slider:before {
 		-webkit-transform: translateX(36px);
 		-ms-transform: translateX(36px);
@@ -106,7 +112,7 @@ const LanguageWrapper = styled.div`
 `;
 
 export default function SwitchThemeButton() {
-	const { changeLanguageLocalization, changeTheme } = useContext(SettingsContext);
+	const { changeLanguageLocalization, changeTheme, language } = useContext(SettingsContext);
 	const [checked, setChecked] = useState(false);
 
 	function handleCheckSwitch() {
@@ -117,8 +123,8 @@ export default function SwitchThemeButton() {
 	return (
 		<LanguageWrapper>
 			<SwitchButton checked={checked}>
-				<label className="switch">
-					<input type="checkbox" checked={checked} onClick={handleCheckSwitch} readOnly />
+				<label className="switch" title={language.a11y.toggleTheme}>
+					<input type="checkbox" checked={checked} onClick={handleCheckSwitch} readOnly aria-label={language.a11y.toggleTheme} />
 					<span className="slider"></span>
 				</label>
 			</SwitchButton>

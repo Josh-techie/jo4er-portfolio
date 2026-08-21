@@ -264,7 +264,7 @@ const pulse = keyframes`
   }
 `;
 
-export const LoadingText = styled.p`
+const LoadingText = styled.p`
 	font-size: 18px;
 	font-weight: bold;
 	color: ${(props) => props.theme.colors.branding};
@@ -273,7 +273,7 @@ export const LoadingText = styled.p`
 	animation: ${pulse} 1.5s infinite;
 `;
 
-export const TitleSpan = styled.h3`
+const TitleSpan = styled.h3`
 	z-index: 2;
 	position: absolute;
 	top: 0;
@@ -821,12 +821,12 @@ export default function Portifolio() {
 									</div>
 									<WrapperButtons>
 										{project.homepage != null && project.homepage != "" && (
-											<a href={project.homepage} target="_blank" rel="noreferrer">
-												<Live />
+											<a href={project.homepage} target="_blank" rel="noreferrer" title={`${project.name} — live`} aria-label={`${project.name} — live`}>
+												<Live aria-hidden="true" />
 											</a>
 										)}
-										<a href={project.svn_url} target="_blank" rel="noreferrer">
-											<GithubOutline />
+										<a href={project.svn_url} target="_blank" rel="noreferrer" title={`${project.name} — GitHub`} aria-label={`${project.name} — GitHub`}>
+											<GithubOutline aria-hidden="true" />
 										</a>
 									</WrapperButtons>
 								</WrapperTechStack>

@@ -1,5 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import styled from "styled-components";
+
+//Contexto
+import { SettingsContext } from "@/context/SettingsContext";
 
 //Ícones
 import { Home } from "@styled-icons/heroicons-solid/Home";
@@ -7,9 +10,10 @@ import { Code } from "@styled-icons/fluentui-system-regular/Code";
 import { Timeline } from "@styled-icons/fluentui-system-regular/Timeline";
 import { FolderBriefcase } from "@styled-icons/fluentui-system-filled/FolderBriefcase";
 import { Badge } from "@styled-icons/material-outlined/Badge";
+import { WorkspacePremium } from "@styled-icons/material-outlined/WorkspacePremium";
 import { scrollToSection } from "./SmoothScroll";
 
-const NavigationBar = styled.div`
+const NavigationBar = styled.nav`
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
@@ -53,64 +57,49 @@ const NavOption = styled.div`
 		height: 26px;
 		color: ${(props) => (props.isActive ? props.theme.colors.branding : "#ccc")};
 	}
+
+	@media (max-width: 425px) {
+		svg {
+			width: 22px;
+			height: 22px;
+		}
+	}
 `;
 
 export default function FloatNavigationBar(props) {
+	const { language } = useContext(SettingsContext);
 	const [active, setActive] = useState("#section-home");
 
-	return (
-		<NavigationBar>
-			<a style={{ textDecoration: "none" }} href="#section-home" onClick={scrollToSection}>
-				<NavOption
-					className="button"
-					isActive={active == "#section-home" ? true : false}
-					onClick={() => {
-						setActive("#section-home");
-					}}>
-					<Home style={{ pointerEvents: "none" }} />
-				</NavOption>
-			</a>
-			<a style={{ textDecoration: "none" }} href="#section-services" onClick={scrollToSection}>
-				<NavOption
-					className="button"
-					isActive={active == "#section-services" ? true : false}
-					onClick={() => {
-						setActive("#section-services");
-					}}>
-					<Code style={{ pointerEvents: "none" }} />
-				</NavOption>
-			</a>
-			<a style={{ textDecoration: "none" }} href="#section-a-propos" onClick={scrollToSection}>
-				<NavOption
-					className="button"
-					isActive={active == "#section-a-propos" ? true : false}
-					onClick={() => {
-						setActive("#section-a-propos");
-					}}>
-					<Timeline style={{ pointerEvents: "none" }} />
-				</NavOption>
-			</a>
-			<a style={{ textDecoration: "none" }} href="#section-portifolio" onClick={scrollToSection}>
-				<NavOption
-					className="button"
-					isActive={active == "#section-portifolio" ? true : false}
-					onClick={() => {
-						setActive("#section-portifolio");
-					}}>
-					<FolderBriefcase style={{ pointerEvents: "none" }} />
-				</NavOption>
-			</a>
+	const navigationOptions = [
+		{ href: "#section-home", Icon: Home, label: language.navbarMenu.labelHome },
+		{ href: "#section-services", Icon: Code, label: language.navbarMenu.labelServices },
+		{ href: "#section-a-propos", Icon: Timeline, label: language.navbarMenu.labelAboutMe },
+		{ href: "#section-portifolio", Icon: FolderBriefcase, label: language.navbarMenu.labelPortifolio },
+		{ href: "#section-experience", Icon: Badge, label: language.navbarMenu.labelExperience },
+		{ href: "#section-certificates", Icon: WorkspacePremium, label: language.navbarMenu.labelCertificates },
+	];
 
-			<a style={{ textDecoration: "none" }} href="#section-experience" onClick={scrollToSection}>
-				<NavOption
-					className="button"
-					isActive={active == "#section-experience" ? true : false}
-					onClick={() => {
-						setActive("#section-experience");
-					}}>
-					<Badge style={{ pointerEvents: "none" }} />
-				</NavOption>
-			</a>
+	return (
+		<NavigationBar aria-label={language.navbarMenu.labelHome}>
+			{navigationOptions.map((option) => (
+				<a
+					key={option.href}
+					style={{ textDecoration: "none" }}
+					href={option.href}
+					onClick={scrollToSection}
+					title={option.label}
+					aria-label={option.label}
+					aria-current={active == option.href ? "true" : undefined}>
+					<NavOption
+						className="button"
+						isActive={active == option.href ? true : false}
+						onClick={() => {
+							setActive(option.href);
+						}}>
+						<option.Icon style={{ pointerEvents: "none" }} aria-hidden="true" />
+					</NavOption>
+				</a>
+			))}
 		</NavigationBar>
 	);
 }

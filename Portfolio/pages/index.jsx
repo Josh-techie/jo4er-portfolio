@@ -4,6 +4,7 @@ import React from "react";
 import AProposDeMoiPage from "../pages/a-propos";
 import PortfolioPage from "../pages/portfolio";
 import ExperiencePage from "../pages/experience";
+import CertificatesPage from "../pages/certificates";
 import HomePage from "../pages/homepage";
 //Components
 import ServicesOffer from "@/components/ServicesOffer";
@@ -17,6 +18,7 @@ export default function Index() {
 			<AProposDeMoiPage />
 			<PortfolioPage />
 			<ExperiencePage />
+			<CertificatesPage />
 			<FooterPage />
 		</>
 	);

@@ -5,7 +5,8 @@
 		"labelServices": "MIS ESPECIALIDADES",
 		"labelAboutMe": "WHOAMI",
 		"labelPortifolio": "PROYECTOS",
-		"labelExperience": "EXPERIENCIAS"
+		"labelExperience": "EXPERIENCIAS",
+		"labelCertificates": "CERTIFICACIONES"
 	},
 	"landingPage": {
 		"apresentationText": "Hello World,",
@@ -80,6 +81,35 @@
 			"labelExtensionCourse": "Cursos de extensión"
 		}
 	},
+	"certificatesPage": {
+		"title": "CERTIFICACIONES",
+		"filterAll": "TODAS",
+		"categories": {
+			"cloud": "Cloud",
+			"offensive": "Ofensiva",
+			"grc": "GRC",
+			"fundamentals": "Fundamentos",
+			"data": "Datos e IA",
+			"languages": "Idiomas",
+			"other": "Otros"
+		},
+		"status": {
+			"active": "Vigente",
+			"inProgress": "En curso",
+			"expired": "Caducada"
+		},
+		"issuedLabel": "Obtenida",
+		"expectedLabel": "Prevista",
+		"expiresLabel": "Caduca",
+		"credentialLabel": "ID",
+		"verifyLabel": "Verificar credencial",
+		"viewLabel": "Ver certificado",
+		"emptyState": "Aún no hay certificaciones en esta categoría."
+	},
+	"a11y": {
+		"backToTop": "Volver arriba",
+		"toggleTheme": "Cambiar entre tema claro y oscuro"
+	},
 	"footer": {
 		"labelNavigation": {
 			"title": "Navegación",
@@ -87,7 +117,8 @@
 			"labelServices": "Mis especialidades",
 			"labelAboutMe": "Whoami",
 			"labelPortifolio": "Proyectos",
-			"labelExperience": "Experiencias"
+			"labelExperience": "Experiencias",
+			"labelCertificates": "Certificaciones"
 		},
 		"labelHost": {
 			"title": "ALOJAMIENTO"

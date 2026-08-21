@@ -18,6 +18,13 @@ html, body, :root {
     overflow-x: hidden;
   }  
 
+  /* keyboard-only focus ring: the reset above clears every outline */
+  a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
+    outline: 2px solid ${(props) => props.theme.colors.branding};
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
   ::selection {
     background: ${(props) => props.theme.colors.branding};
     color: ${(props) => props.theme.colors.background};

@@ -202,7 +202,9 @@ const CopyrightText = styled.span`
 	font-size: 14px;
 `;
 
-const ButtonUpToTop = styled.div`
+const ButtonUpToTop = styled.button`
+	border: none;
+	padding: 0;
 	/* position: fixed; */
 	display: flex;
 	align-items: center;
@@ -277,6 +279,9 @@ export default function FooterPage(props) {
 						<a style={{ textDecoration: "none" }} href="#section-experience" onClick={scrollToSection}>
 							<FooterText>{language.footer.labelNavigation.labelExperience}</FooterText>
 						</a>
+						<a style={{ textDecoration: "none" }} href="#section-certificates" onClick={scrollToSection}>
+							<FooterText>{language.footer.labelNavigation.labelCertificates}</FooterText>
+						</a>
 					</SectionFooterMenu>
 				</Fade>
 
@@ -317,14 +322,14 @@ export default function FooterPage(props) {
 			</div>
 			<Divider />
 			<ContainerBuildCopyright>
-				<CopyrightText> 2025 Youssef Abouyahia</CopyrightText>
+				<CopyrightText> 2026 Youssef Abouyahia</CopyrightText>
 				<SocialNetworkRowStack />
 				<div className="build-and-button-top">
 					<TextBuildProject>
 						{language.footer.labelBuildVersion}: {commit || ""}
 					</TextBuildProject>
-					<ButtonUpToTop onClick={goToTop}>
-						<KeyboardArrowUp />
+					<ButtonUpToTop type="button" onClick={goToTop} title={language.a11y.backToTop} aria-label={language.a11y.backToTop}>
+						<KeyboardArrowUp aria-hidden="true" />
 					</ButtonUpToTop>
 				</div>
 			</ContainerBuildCopyright>

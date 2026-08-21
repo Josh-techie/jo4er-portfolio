@@ -6,111 +6,145 @@ import { Twitter } from "@styled-icons/boxicons-logos/Twitter";
 import { Github } from "@styled-icons/bootstrap/Github";
 import { Tryhackme } from "@styled-icons/simple-icons/Tryhackme";
 import { Hackthebox } from "@styled-icons/simple-icons/Hackthebox";
-import { FlagCheckered } from "@styled-icons/boxicons-solid/FlagCheckered";
+import { Flask } from "@styled-icons/fa-solid/Flask";
 
 const SocialMediaContainer = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 5px;
 
 	@media (max-width: 600px) {
 		width: 100%;
 		//justify-content: space-between;
 		margin-bottom: 20px;
+		gap: 6px;
+	}
+`;
+
+const IconLabel = styled.span`
+	/* same visual language as components/Tooltip.jsx */
+	position: absolute;
+	bottom: 125%;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 3px 8px;
+	border-radius: 4px;
+	background-color: ${(props) => props.theme.colors.branding};
+	color: ${(props) => props.theme.colors.background};
+	font-size: 12px;
+	font-weight: 900;
+	white-space: nowrap;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	pointer-events: none;
+	z-index: 2;
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		margin-left: -5px;
+		border-width: 5px;
+		border-style: solid;
+		border-color: ${(props) => props.theme.colors.branding} transparent transparent transparent;
 	}
 `;
 
 const ButtonSocialMediaIcon = styled.a`
+	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-right: 5px;
 	width: 32px;
 	height: 32px;
 	transition: all 0.3s ease;
 	border-radius: 4px;
 	background-color: ${(props) => props.theme.colors.backgroundSecondary};
 
-	&:hover {
-		cursor: pointer;
-		opacity: 0.5;
-	}
-
-	&:active {
-		opacity: 0.5;
-	}
-
 	svg {
 		color: ${(props) => props.theme.colors.branding};
 		width: 24px;
 		height: 24px;
 		transition: all 0.3s ease;
+	}
 
-		&:hover {
-			color: ${(props) => props.theme.colors.branding};
+	/* invert the chip instead of fading it out: opacity on the anchor would dim the
+	   label too, and the inverted state is easier to see in both themes */
+	&:hover,
+	&:focus-visible {
+		cursor: pointer;
+		background-color: ${(props) => props.theme.colors.branding};
+
+		svg {
+			color: ${(props) => props.theme.colors.backgroundSecondary};
+		}
+
+		${IconLabel} {
+			visibility: visible;
+			opacity: 1;
 		}
 	}
 
-	@media (max-width: 600px) {
-		margin-left: 3px;
-		margin-right: 3px;
+	&:focus-visible {
+		outline: 2px solid ${(props) => props.theme.colors.branding};
+		outline-offset: 3px;
 	}
 
-	/* :hover {
-		transform: translateY(-7px);
-	} */
+	&:active {
+		opacity: 0.5;
+	}
 `;
 
-// showPentestPlatforms exibe os perfis de CTF/pentest (usado apenas na seção "whoami")
+const socialNetworks = [
+	{ key: "github", label: "GitHub", href: "https://github.com/Josh-techie", Icon: Github },
+	{ key: "email", label: "Email", href: "mailto:youssef.abouyahia@edu.devinci.fr", Icon: MailSend },
+	{ key: "linkedin", label: "LinkedIn", href: "https://www.linkedin.com/in/youssef-abouyahia/", Icon: LinkedinSquare, event: "linkedin-access" },
+	{ key: "x", label: "X (Twitter)", href: "https://x.com/JoesephAb", Icon: Twitter },
+];
+
+// Pentest/CTF profiles, shown only where `showPentestPlatforms` is passed (whoami section)
+const pentestPlatforms = [
+	{ key: "tryhackme", label: "TryHackMe", href: "https://tryhackme.com/p/Jo4er", Icon: Tryhackme, event: "tryhackme-access" },
+	{
+		key: "hackthebox",
+		label: "Hack The Box",
+		href: "https://profile.hackthebox.com/profile/019f275e-a9a1-71b9-adf0-85f939c03543",
+		Icon: Hackthebox,
+		event: "hackthebox-access",
+	},
+	{
+		key: "cylab",
+		label: "CyLab Academy (ex-picoCTF)",
+		href: "https://learn.cylabacademy.org/users/Jo4er",
+		// no CyLab brand icon exists in styled-icons; a flask ("lab") is the closest stand-in.
+		// Drop their real SVG in here as an inline <svg> (like the custom icons in pages/portfolio.jsx) to swap it.
+		Icon: Flask,
+		event: "cylab-access",
+	},
+];
+
 export default function SocialNetworkRowStack({ showPentestPlatforms = false }) {
+	const links = showPentestPlatforms ? [...socialNetworks, ...pentestPlatforms] : socialNetworks;
+
 	return (
 		<SocialMediaContainer>
-			<ButtonSocialMediaIcon href="https://github.com/Josh-techie" target="_blank">
-				<Github />
-			</ButtonSocialMediaIcon>
-
-			<ButtonSocialMediaIcon href="mailto:youssef.abouyahia@edu.devinci.fr" target="_blank">
-				<MailSend />
-			</ButtonSocialMediaIcon>
-
-			<ButtonSocialMediaIcon href="https://www.linkedin.com/in/youssef-abouyahia/" target="_blank" data-splitbee-event="linkedin-access">
-				<LinkedinSquare />
-			</ButtonSocialMediaIcon>
-
-			<ButtonSocialMediaIcon href="https://x.com/JoesephAb" target="_blank">
-				<Twitter />
-			</ButtonSocialMediaIcon>
-
-			{showPentestPlatforms && (
-				<>
-					<ButtonSocialMediaIcon href="https://tryhackme.com/p/Jo4er" target="_blank" rel="noopener noreferrer" title="TryHackMe" aria-label="TryHackMe" data-splitbee-event="tryhackme-access">
-						<Tryhackme />
-					</ButtonSocialMediaIcon>
-
-					<ButtonSocialMediaIcon
-						href="https://profile.hackthebox.com/profile/019f275e-a9a1-71b9-adf0-85f939c03543"
-						target="_blank"
-						rel="noopener noreferrer"
-						title="Hack The Box"
-						aria-label="Hack The Box"
-						data-splitbee-event="hackthebox-access"
-					>
-						<Hackthebox />
-					</ButtonSocialMediaIcon>
-
-					<ButtonSocialMediaIcon
-						href="https://learn.cylabacademy.org/users/Jo4er"
-						target="_blank"
-						rel="noopener noreferrer"
-						title="CyLab Academy (ex-picoCTF)"
-						aria-label="CyLab Academy (ex-picoCTF)"
-						data-splitbee-event="cylab-access"
-					>
-						<FlagCheckered />
-					</ButtonSocialMediaIcon>
-				</>
-			)}
+			{links.map((link) => (
+				<ButtonSocialMediaIcon
+					key={link.key}
+					href={link.href}
+					target="_blank"
+					rel="noopener noreferrer"
+					aria-label={link.label}
+					data-splitbee-event={link.event}>
+					<link.Icon aria-hidden="true" />
+					<IconLabel aria-hidden="true">{link.label}</IconLabel>
+				</ButtonSocialMediaIcon>
+			))}
 		</SocialMediaContainer>
 	);
 }

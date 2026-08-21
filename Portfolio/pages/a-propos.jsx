@@ -70,9 +70,18 @@ const WrapperAboutMe = styled.div`
 				display: flex;
 				align-items: center;
 				justify-content: space-between;
+				flex-wrap: wrap;
+				/* keeps the 7 platform icons from crowding the CV button */
+				gap: 40px;
+				width: 100%;
+
+				@media (max-width: 900px) {
+					gap: 24px;
+				}
 
 				@media (max-width: 601px) {
 					flex-direction: column;
+					gap: 0;
 				}
 			}
 

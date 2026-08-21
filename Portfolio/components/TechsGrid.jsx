@@ -143,7 +143,7 @@ const renderTechs = (icons) =>
 		</Tech>
 	));
 
-export const TitleSection = styled.h2`
+const TitleSection = styled.h2`
 	font-weight: 700;
 	color: ${(props) => props.theme.colors.branding};
 	font-size: 26px;
