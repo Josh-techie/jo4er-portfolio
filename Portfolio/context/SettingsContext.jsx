@@ -10,6 +10,8 @@ import enukJson from "@/config/localization/enuk.json";
 import esesJson from "@/config/localization/eses.json";
 import ititJson from "@/config/localization/itit.json";
 import dedeJson from "@/config/localization/dede.json";
+import fifiJson from "@/config/localization/fifi.json";
+import svseJson from "@/config/localization/svse.json";
 
 export const SettingsContext = createContext({});
 
@@ -24,6 +26,8 @@ const listaIdiomas = {
 	eses: esesJson,
 	itit: ititJson,
 	dede: dedeJson,
+	fifi: fifiJson,
+	svse: svseJson,
 };
 
 // Map browser language codes to website language IDs
@@ -39,6 +43,10 @@ const browserLangToId = {
 	"it-IT": "itit",
 	"de": "dede",
 	"de-DE": "dede",
+	"fi": "fifi",
+	"fi-FI": "fifi",
+	"sv": "svse",
+	"sv-SE": "svse",
 };
 
 function detectBrowserLanguage() {

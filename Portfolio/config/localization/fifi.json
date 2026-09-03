@@ -1,0 +1,134 @@
+{
+	"id": "fifi",
+	"navbarMenu": {
+		"labelHome": "PÄÄVALIKKO",
+		"labelServices": "OSAAMISALUEENI",
+		"labelAboutMe": "MINÄ",
+		"labelPortifolio": "PROJEKTIT",
+		"labelExperience": "KOKEMUS",
+		"labelCertificates": "SERTIFIKAATIT"
+	},
+	"landingPage": {
+		"apresentationText": "Hei maailma,",
+		"name": "Youssef Abouyahia",
+		"resumeText": "Kyberturvallisuusinsinööri, joka on innostunut hyökkäävästä tietoturvasta ja osallistuu säännöllisesti CTF-kilpailuihin.\n \n Rakastan itse isännöintiä, oman infrastruktuurini hallintaa ja mukautettujen n8n-työnkulkujen rakentamista arkeni automatisointiin ja optimointiin. Viime aikoina olen kiinnostunut IoT-tietoturvasta oppiakseni suojaamaan itse rakentamiani laitteita. Seuraava haasteeni on löytää rooli, jossa voin auttaa suojaamaan organisaatioita ja yhteiskuntaa tehden samalla sitä, mistä pidän.",
+		"buttonText": "Minusta"
+	},
+	"servicesOffer": {
+		"title": "Osaamisalueeni",
+		"cards": {
+			"forensique": {
+				"title": "Rikostekninen analyysi",
+				"contentText": "Edistyneet taidot digitaalisessa rikosteknisessä analyysissä: datan hankinta, todisteiden analysointi ja analyysityökalujen kehittäminen."
+			},
+			"reverse": {
+				"title": "Käänteismallinnus",
+				"contentText": "Vahvat taidot binäärien staattisessa/dynaamisessa analyysissä ja haittaohjelmien deobfuskaatiossa."
+			},
+			"devsecops": {
+				"title": "DevSecOps",
+				"contentText": "Työkalujen ja ratkaisujen käyttöönotto ja isännöinti ottaen huomioon IT-tietoturva ja säädösten noudattaminen. Osaava CI/CD- ja verkkoturvallisuusasioissa."
+			},
+			"domotique": {
+				"title": "Kotiautomaatio",
+				"contentText": "Kotiautomaatioratkaisujen paikallinen isännöinti. Kotiautomaatiolaitteiden asennus, luominen ja yhdistäminen toistuvien päivittäisten tehtävien automatisoimiseksi."
+			},
+			"developpement": {
+				"title": "Kehitys",
+				"contentText": "Asiantuntemus Java-, Python-, C/C++-, Javascript-, Bash- ja Docker-kielissä ja muissa. Githubin edistynyt käyttö versionhallintaan ja yhteistyöhön henkilökohtaisissa ja ammatillisissa projekteissa."
+			},
+			"pentesting": {
+				"title": "Hyökkäävä tietoturva",
+				"contentText": "Taidot haavoittuvuuksien arvioinnissa, hyväksikäytössä ja tietoturvaraporttien laadinnassa. Kokemusta tunkeutumistestausmenetelmistä ja -työkaluista (Nmap, Metasploit, Hydra, Burp Suite..."
+			},
+			"grc": {
+				"title": "GRC",
+				"contentText": "Asiantuntemus riskienarvioinnissa, vaatimustenmukaisuuden hallinnassa, auditointituessa ja tietoturvakehysten toteuttamisessa. Kehyksiin kuuluvat GDPR, ISO 27001, NIST CSF, PCI DSS, DORA ja NIS2."
+			}
+		}
+	},
+	"aboutMePage": {
+		"title": "KUKA MINÄ OLEN?",
+		"paragraph_one": "Kyberturvallisuusinsinööri, jolla on 3 vuoden kokemus ja joka on vasta valmistunut ESILV:stä maisteriksi kyberturvallisuudessa ja kriisijohtamisessa. Erikoistunut pilvi- ja paikallisten infrastruktuurien suojaamiseen, tunkeutumistestaukseen sekä hallintoon, riskeihin ja vaatimustenmukaisuuteen (GRC).",
+		"paragraph_two": "Lähestymistapani: riko ymmärtääksesi, ymmärrä suojataksesi paremmin. Nautin hyökkäysskenaarioiden kehittämisestä, kiertotekniikoiden testaamisesta ja haavoittuvuuksien tunnistamisesta ennen kuin muut hyödyntävät niitä. Liikun sujuvasti koodin ja infrastruktuurin parissa sekä vaatimustenmukaisuusauditoinneissa (ISO 27001, NIS2, GDPR, DORA) ja riskianalyyseissä (EBIOS RM).",
+		"paragraph_three": "Sertifioitu Professional Cloud Security Engineer (Google) ja innostunut IoT- ja laitteistohakkeroinnista, osallistun säännöllisesti CTF-kilpailuihin taitojeni kehittämiseksi ja pysyäkseni ajan tasalla uusimmista hyväksikäyttötekniikoista. Etsin kokoaikaista tehtävää lokakuusta 2026 alkaen osallistuakseni kriittisten ja korkean riskin ympäristöjen suojaamiseen.",
+		"github_card": {
+			"followers": "seuraajaa",
+			"following": "seurattavaa",
+			"repos": "repoa"
+		},
+		"alt_dev_img": "jo4er",
+		"cv": {
+			"file": "/cv/CV_Eng_YoussefAbouyahia.pdf",
+			"buttonText": "Lataa CV"
+		}
+	},
+	"portifolioPage": {
+		"title": "PROJEKTIT",
+		"labelFilter": "KAIKKI",
+		"createdLabel": "Luotu"
+	},
+	"experiencePage": {
+		"title": "KOKEMUS",
+		"timeline": {
+			"labelPosition": "Asema",
+			"labelTitle": "Nimike",
+			"labelCompany": "Yritys",
+			"labelCategory": "Kategoria",
+			"labelInstitution": "Oppilaitos",
+			"labelProfessionalCourse": "Ammatilliset kurssit",
+			"labelBachelorDegree": "Kandidaatin tutkinto",
+			"labelExtensionCourse": "Täydentävät kurssit"
+		}
+	},
+	"certificatesPage": {
+		"title": "SERTIFIKAATIT",
+		"filterAll": "KAIKKI",
+		"categories": {
+			"cloud": "Pilvi",
+			"offensive": "Hyökkäävä",
+			"grc": "GRC",
+			"fundamentals": "Perusteet",
+			"data": "Data & AI",
+			"languages": "Kielet",
+			"other": "Muu"
+		},
+		"status": {
+			"active": "Voimassa",
+			"inProgress": "Kesken",
+			"expired": "Vanhentunut"
+		},
+		"issuedLabel": "Myönnetty",
+		"expectedLabel": "Odotettu",
+		"expiresLabel": "Vanhenee",
+		"credentialLabel": "Tunnus",
+		"verifyLabel": "Vahvista sertifikaatti",
+		"viewLabel": "Näytä sertifikaatti",
+		"emptyState": "Ei sertifikaatteja tässä kategoriassa toistaiseksi."
+	},
+	"a11y": {
+		"backToTop": "Takaisin alkuun",
+		"toggleTheme": "Vaihda vaalean ja tumman teeman välillä"
+	},
+	"footer": {
+		"labelNavigation": {
+			"title": "Navigointi",
+			"labelHome": "Päävalikko",
+			"labelServices": "Osaamisalueeni",
+			"labelAboutMe": "Minä",
+			"labelPortifolio": "Projektit",
+			"labelExperience": "Kokemus",
+			"labelCertificates": "Sertifikaatit"
+		},
+		"labelHost": {
+			"title": "ISÄNNÖINTI"
+		},
+		"labelSourceCode": {
+			"title": "LÄHDEKOODI"
+		},
+		"labelTechs": {
+			"title": "TEKNOLOGIAT"
+		},
+		"labelBuildVersion": "Versio"
+	}
+}

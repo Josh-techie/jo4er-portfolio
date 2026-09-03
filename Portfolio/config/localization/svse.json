@@ -1,0 +1,134 @@
+{
+	"id": "svse",
+	"navbarMenu": {
+		"labelHome": "HUVUDMENY",
+		"labelServices": "MINA OMRÅDEN",
+		"labelAboutMe": "VEM ÄR JAG",
+		"labelPortifolio": "PROJEKT",
+		"labelExperience": "ERFARENHET",
+		"labelCertificates": "CERTIFIERINGAR"
+	},
+	"landingPage": {
+		"apresentationText": "Hej världen,",
+		"name": "Youssef Abouyahia",
+		"resumeText": "Cybersäkerhetsingenjör med passion för offensiv säkerhet och regelbundet deltagande i CTF-tävlingar.\n \n Jag älskar att självhosta, hantera min egen infrastruktur och bygga anpassade n8n-arbetsflöden för att automatisera och optimera min vardag. På senare tid har jag blivit intresserad av IoT-säkerhet för att lära mig skydda de enheter jag själv bygger. Min nästa utmaning är att hitta en roll där jag kan bidra till att skydda organisationer och samhället samtidigt som jag gör det jag älskar.",
+		"buttonText": "Om mig"
+	},
+	"servicesOffer": {
+		"title": "Mina områden",
+		"cards": {
+			"forensique": {
+				"title": "Forensik",
+				"contentText": "Avancerade färdigheter inom digital forensik: datainsamling, bevisanalys och utveckling av analysverktyg."
+			},
+			"reverse": {
+				"title": "Reverse Engineering",
+				"contentText": "Starka färdigheter inom statisk/dynamisk binäranalys och deobfuskering av skadlig kod."
+			},
+			"devsecops": {
+				"title": "DevSecOps",
+				"contentText": "Driftsättning och hosting av verktyg och lösningar med hänsyn till IT-säkerhet och regelefterlevnad. Skicklig inom CI/CD och nätverkssäkerhet."
+			},
+			"domotique": {
+				"title": "Hemautomation",
+				"contentText": "Lokal hosting av hemautomationslösningar. Installation, skapande och anslutning av hemautomationsenheter för att automatisera återkommande vardagsuppgifter."
+			},
+			"developpement": {
+				"title": "Utveckling",
+				"contentText": "Expertis inom Java, Python, C/C++, Javascript, Bash, Docker med mera. Avancerad användning av Github för versionshantering och samarbete i personliga och professionella projekt."
+			},
+			"pentesting": {
+				"title": "Offensiv säkerhet",
+				"contentText": "Färdigheter inom sårbarhetsbedömning, exploatering och skrivande av säkerhetsrapporter. Erfarenhet av penetrationstestmetoder och verktyg (Nmap, Metasploit, Hydra, Burp Suite..."
+			},
+			"grc": {
+				"title": "GRC",
+				"contentText": "Expertis inom riskbedömning, efterlevnadshantering, revisionsstöd och implementering av säkerhetsramverk. Ramverk inkluderar GDPR, ISO 27001, NIST CSF, PCI DSS, DORA och NIS2."
+			}
+		}
+	},
+	"aboutMePage": {
+		"title": "VEM ÄR JAG?",
+		"paragraph_one": "Cybersäkerhetsingenjör med 3 års erfarenhet, nyligen examinerad med en master i cybersäkerhet och krisledarskap från ESILV. Specialiserad på att säkra moln- och lokala infrastrukturer, penetrationstestning samt styrning, risk och efterlevnad (GRC).",
+		"paragraph_two": "Mitt tillvägagångssätt: bryt för att förstå, förstå för att skydda bättre. Jag tycker om att utveckla attackscenarier, testa undanflyktstekniker och identifiera sårbarheter innan andra utnyttjar dem. Jag rör mig obehindrat mellan kod och infrastruktur samt efterlevnadsrevisioner (ISO 27001, NIS2, GDPR, DORA) och riskanalys (EBIOS RM).",
+		"paragraph_three": "Certifierad Professional Cloud Security Engineer (Google) och passionerad inom IoT och hårdvaruhackning, jag deltar regelbundet i CTF-tävlingar för att skärpa mina färdigheter och hålla mig uppdaterad om de senaste exploateringsteknikerna. Jag söker en heltidstjänst med start oktober 2026 för att bidra till att skydda kritiska och högriskmiljöer.",
+		"github_card": {
+			"followers": "följare",
+			"following": "följer",
+			"repos": "repor"
+		},
+		"alt_dev_img": "jo4er",
+		"cv": {
+			"file": "/cv/CV_Eng_YoussefAbouyahia.pdf",
+			"buttonText": "Ladda ner CV"
+		}
+	},
+	"portifolioPage": {
+		"title": "PROJEKT",
+		"labelFilter": "ALLA",
+		"createdLabel": "Skapad den"
+	},
+	"experiencePage": {
+		"title": "ERFARENHET",
+		"timeline": {
+			"labelPosition": "Position",
+			"labelTitle": "Titel",
+			"labelCompany": "Företag",
+			"labelCategory": "Kategori",
+			"labelInstitution": "Institution",
+			"labelProfessionalCourse": "Yrkeskurser",
+			"labelBachelorDegree": "Kandidatexamen",
+			"labelExtensionCourse": "Fortbildningskurser"
+		}
+	},
+	"certificatesPage": {
+		"title": "CERTIFIERINGAR",
+		"filterAll": "ALLA",
+		"categories": {
+			"cloud": "Moln",
+			"offensive": "Offensiv",
+			"grc": "GRC",
+			"fundamentals": "Grunder",
+			"data": "Data & AI",
+			"languages": "Språk",
+			"other": "Övrigt"
+		},
+		"status": {
+			"active": "Giltig",
+			"inProgress": "Pågår",
+			"expired": "Utgången"
+		},
+		"issuedLabel": "Utfärdad",
+		"expectedLabel": "Förväntad",
+		"expiresLabel": "Upphör",
+		"credentialLabel": "ID",
+		"verifyLabel": "Verifiera certifikat",
+		"viewLabel": "Visa certifikat",
+		"emptyState": "Inga certifieringar i denna kategori ännu."
+	},
+	"a11y": {
+		"backToTop": "Till toppen",
+		"toggleTheme": "Växla mellan ljust och mörkt tema"
+	},
+	"footer": {
+		"labelNavigation": {
+			"title": "Navigering",
+			"labelHome": "Huvudmeny",
+			"labelServices": "Mina områden",
+			"labelAboutMe": "Vem är jag",
+			"labelPortifolio": "Projekt",
+			"labelExperience": "Erfarenhet",
+			"labelCertificates": "Certifieringar"
+		},
+		"labelHost": {
+			"title": "HOSTING"
+		},
+		"labelSourceCode": {
+			"title": "KÄLLKOD"
+		},
+		"labelTechs": {
+			"title": "TEKNOLOGIER"
+		},
+		"labelBuildVersion": "Version"
+	}
+}

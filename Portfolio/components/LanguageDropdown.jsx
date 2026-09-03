@@ -173,6 +173,8 @@ export default function LanguageDropdown() {
 		{ id: 'eses', name: 'ES', flag: '🇪🇸' },
 		{ id: 'itit', name: 'IT', flag: '🇮🇹' },
 		{ id: 'dede', name: 'DE', flag: '🇩🇪' },
+		{ id: 'fifi', name: 'FI', flag: '🇫🇮' },
+		{ id: 'svse', name: 'SV', flag: '🇸🇪' },
 	];
 
 	const currentLanguage = language?.id || 'frfr';
