@@ -340,4 +340,140 @@ export const experiencesByLanguage = {
 			],
 		},
 	],
+	fifi: [
+		{
+			period: "Huhtikuu 2026 — Nykyhetki",
+			role: "Kyberturvallisuuskonsultti",
+			company: "Ayming",
+			location: "Pariisi, Ranska",
+			highlights: [
+				"Johtanut PDCA-syklin (Plan-Do-Check-Act) auditointia keskittyen Check-vaiheeseen ISO 27001 -standardin mukaisesti, jäsentäen hallintodokumentaatiota ja riskikatselmusta auditointia varten, vahvistaen jäljitettävyyttä ja parantaen vaatimustenmukaisuutta 35%",
+				"Suorittanut 3 tunkeutumistestiä (2 asiakasratkaisuille käyttöönottoa edeltävässä vaiheessa ja 1 sisäisesti), tunnistaen kriittisiä heikkouksia ja parantaen järjestelmien kestävyyttä ennen tuotantoonvientiä",
+			],
+		},
+		{
+			period: "Maaliskuu 2025 — Elokuu 2025",
+			role: "DevOps/DevSecOps-insinööri",
+			company: "VOID",
+			location: "Agadir, Marokko",
+			highlights: [
+				"Määrittänyt ja asentanut fyysisen palvelimen esituotantopalvelimeksi Dockerilla/EasyPanelilla Agadirissa, synkronoituna toisen palvelimen kanssa Casablancassa",
+				"Luonut mukautettuja Docker-imageja ja konteroituja käyttöönottoputkia NextJS- ja Drupal-projekteille, vähentäen testausaikaa 40%",
+				"Suorittanut white-box-tunkeutumistestejä ja koodiauditointeja asiakasinfrastruktuureissa, löytäen yli 10 keskitasoisesta kriittiseen ulottuvaa haavoittuvuutta",
+				"Kehittänyt mukautetun sisäisen koodiskannerin Drupal- ja NextJS-projekteille, vähentäen manuaalisen tarkistuksen työmäärää 60%",
+			],
+		},
+		{
+			period: "Syyskuu 2024 — Lokakuu 2024",
+			role: "Software Engineer",
+			company: "Nucleo (YC F25)",
+			location: "San Francisco, CA",
+			highlights: [
+				"Suunnitellut ja kehittänyt frontendin (React.js, Tailwind CSS ja Flask) yrityksen sisäisiin dokumentteihin pohjautuvalle AI-avustajalle, integroiden OneDriven kontekstuaalista hakua varten",
+				"Parantanut chatbotin vastausten relevanssia 30% kehittämällä RAG-järjestelmän",
+			],
+		},
+		{
+			period: "Heinäkuu 2024 — Syyskuu 2024",
+			role: "Tiiminvetäjä",
+			company: "Orange",
+			location: "Agadir, Marokko",
+			highlights: [
+				"Johtanut 6 hengen monialaista tiimiä luomaan ODAC:n (Optimal Doctor AI Companion), tekoälyllä toimivan älyrannekkeen terveydenhuoltoon",
+				"Suunnitellut päästä päähän IoT- ja pilviratkaisun käyttäen ESP32:ta, AWS Cloudia ja Amazon SageMakeria reaaliaikaiseen terveydentilan seurantaan",
+				"Kehittänyt turvallisen mobiilisovelluksen Flutterilla ja Mavenilla reaaliaikaisiin terveyshälytyksiin ja lääketieteelliseen seurantaan",
+				"Hallinnoinut ketterää kehityssykliä, järjestäen viikoittaisia sprinttisuunnitteluja ja viestintää mentoreiden/kumppaneiden kanssa",
+			],
+		},
+		{
+			period: "Toukokuu 2024 — Heinäkuu 2024",
+			role: "Kyberturvallisuuden järjestelmäarkkitehti",
+			company: "OCP Group",
+			location: "Ben Guerir, Marokko",
+			highlights: [
+				"Tehnyt yhteistyötä tiimin kanssa suunnitellessaan ja kehittäessään päivystyksenhallintajärjestelmää yli 100 työntekijälle",
+				"Suunnitellut turvallisen infrastruktuurin, joka noudattaa lakia 05-20 ja ISO 27001 -standardia, sisältäen roolipohjaisen käyttöoikeuksien hallinnan (RBAC) toteutuksen",
+				"Kehittänyt intuitiivisia web-käyttöliittymiä, jotka automatisoivat 90% manuaalisista aikataulutustehtävistä",
+			],
+		},
+		{
+			period: "Heinäkuu 2023 — Elokuu 2023",
+			role: "Junior-insinööri",
+			company: "LECOURT CONSULTING",
+			location: "Agadir, Marokko",
+			highlights: [
+				"Kehittänyt ja suunnitellut verkkosovelluksen yritysten perustamisen yksinkertaistamiseksi Ranskassa",
+				"Suorittanut white-box-tunkeutumistestin heidän CMS:lleen",
+				"Turvannut alustan NIST- ja ISO 27001 -standardien mukaisesti",
+			],
+		},
+	],
+	svse: [
+		{
+			period: "April 2026 — Nutid",
+			role: "Cybersäkerhetskonsult",
+			company: "Ayming",
+			location: "Paris, Frankrike",
+			highlights: [
+				"Ledde PDCA-cykelrevision (Plan-Do-Check-Act) med fokus på Check-fasen i enlighet med ISO 27001, strukturerade styrningsdokumentation och riskgranskning för revisionsförberedelse, stärkte spårbarheten och förbättrade efterlevnadsnivån med 35%",
+				"Genomförde 3 penetrationstester (2 på kundlösningar i förproduktion och 1 internt), identifierade kritiska svagheter och förbättrade systemens motståndskraft före produktionssättning",
+			],
+		},
+		{
+			period: "Mars 2025 — Augusti 2025",
+			role: "DevOps/DevSecOps-ingenjör",
+			company: "VOID",
+			location: "Agadir, Marocko",
+			highlights: [
+				"Konfigurerade och satte upp en fysisk server som förproduktionsserver med Docker/EasyPanel i Agadir, synkroniserad med en annan server i Casablanca",
+				"Skapade anpassade Docker-images och containeriserade driftsättningspipelines för NextJS- och Drupal-projekt, vilket minskade testtiden med 40%",
+				"Utförde white-box-penetrationstester och kodrevisioner på kundinfrastrukturer, upptäckte fler än 10 medelhöga till kritiska sårbarheter",
+				"Utvecklade en anpassad intern kodskanner för Drupal- och NextJS-projekt, vilket minskade den manuella granskningsinsatsen med 60%",
+			],
+		},
+		{
+			period: "September 2024 — Oktober 2024",
+			role: "Mjukvaruingenjör",
+			company: "Nucleo (YC F25)",
+			location: "San Francisco, CA",
+			highlights: [
+				"Arkitekterade och utvecklade frontend (React.js, Tailwind CSS och Flask) för en AI-assistent driven av företagets interna dokument, med integrering av OneDrive för kontextuell hämtning",
+				"Förbättrade chatbotens svarsrelevans med 30% genom utveckling av ett RAG-system",
+			],
+		},
+		{
+			period: "Juli 2024 — September 2024",
+			role: "Teamledare",
+			company: "Orange",
+			location: "Agadir, Marocko",
+			highlights: [
+				"Ledde ett tvärvetenskapligt team på 6 personer för att skapa ODAC (Optimal Doctor AI Companion), ett AI-drivet smart armband för hälsovård",
+				"Designade en heltäckande IoT- och molnlösning med ESP32, AWS Cloud och Amazon SageMaker för realtidsövervakning av hälsa",
+				"Utvecklade en säker mobilapplikation med Flutter och Maven för realtidshälsovarningar och medicinsk övervakning",
+				"Hanterade den agila utvecklingscykeln, organiserade veckovisa sprintplaneringar och kommunikation med mentorer/partners",
+			],
+		},
+		{
+			period: "Maj 2024 — Juli 2024",
+			role: "Systemarkitekt för cybersäkerhet",
+			company: "OCP Group",
+			location: "Ben Guerir, Marocko",
+			highlights: [
+				"Samarbetade med ett team för att arkitektera och utveckla ett jourhanteringssystem för fler än 100 anställda",
+				"Designade en säker infrastruktur i enlighet med lag 05-20 och ISO 27001, inklusive implementering av rollbaserad åtkomstkontroll (RBAC)",
+				"Utvecklade intuitiva webbgränssnitt som automatiserar 90% av de manuella schemaläggningsuppgifterna",
+			],
+		},
+		{
+			period: "Juli 2023 — Augusti 2023",
+			role: "Junioringenjör",
+			company: "LECOURT CONSULTING",
+			location: "Agadir, Marocko",
+			highlights: [
+				"Utvecklade och designade en webbapplikation för att förenkla företagsbildning i Frankrike",
+				"Genomförde ett white-box-pentest på deras CMS",
+				"Säkrade plattformen i enlighet med NIST- och ISO 27001-standarder",
+			],
+		},
+	],
 };
