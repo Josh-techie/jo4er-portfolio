@@ -1,13 +1,14 @@
 export const experiencesByLanguage = {
 	frfr: [
 		{
-			period: "Avril 2026 — Présent",
+			period: "Avril 2026 — Octobre 2026",
 			role: "Consultant Cybersécurité",
 			company: "Ayming",
 			location: "Paris, France",
 			highlights: [
 				"Piloté l'audit du cycle PDCA (Plan-Do-Check-Act) avec un focus sur la phase Check conformément à ISO 27001, structurant la documentation de gouvernance et la revue des risques en vue de l'audit, renforçant la traçabilité et améliorant la posture de conformité de 35%",
-				"Réalisé 3 tests d'intrusion (2 sur solutions clients en pré-déploiement et 1 en interne), identifiant des faiblesses critiques et améliorant la résilience des systèmes avant mise en production",
+				"Comparé deux solutions EDR de manière indépendante, mesuré par la détection et la réponse face à des attaques cloud simulées, en définissant le protocole, en exécutant les simulations et en restituant les résultats à la direction",
+				"Surveillé quotidiennement les alertes de sécurité et l'exposition cloud, mesuré par le traitement des alertes et vulnérabilités, via Microsoft Sentinel, Microsoft Defender for Endpoint et Wiz",
 			],
 		},
 		{
@@ -69,13 +70,14 @@ export const experiencesByLanguage = {
 	],
 	enuk: [
 		{
-			period: "April 2026 — Present",
+			period: "April 2026 — October 2026",
 			role: "Cybersecurity Consultant",
 			company: "Ayming",
 			location: "Paris, France",
 			highlights: [
 				"Led PDCA (Plan-Do-Check-Act) cycle audit with focus on Check phase in compliance with ISO 27001, structuring governance documentation and risk review for audit preparation, strengthening traceability and improving compliance posture by 35%",
-				"Conducted 3 penetration tests (2 on client solutions in pre-deployment and 1 internally), identifying critical weaknesses and improving system resilience before production deployment",
+				"Compared two EDR solutions independently, measured by detection and response against simulated cloud attacks, by defining the protocol, running the simulations and presenting results to leadership",
+				"Monitored security alerts and cloud exposure daily, measured by alerts and vulnerabilities triaged, using Microsoft Sentinel, Microsoft Defender for Endpoint and Wiz",
 			],
 		},
 		{
@@ -138,13 +140,14 @@ export const experiencesByLanguage = {
 	],
 	eses: [
 		{
-			period: "Abril 2026 — Presente",
+			period: "Abril 2026 — Octubre 2026",
 			role: "Consultor de Ciberseguridad",
 			company: "Ayming",
 			location: "París, Francia",
 			highlights: [
 				"Lideré la auditoría del ciclo PDCA (Plan-Do-Check-Act) con enfoque en la fase Check conforme a ISO 27001, estructurando la documentación de gobernanza y la revisión de riesgos para la auditoría, reforzando la trazabilidad y mejorando la postura de cumplimiento en un 35%",
-				"Realicé 3 pruebas de penetración (2 en soluciones de clientes en pre-despliegue y 1 interna), identificando debilidades críticas y mejorando la resiliencia de los sistemas antes de la puesta en producción",
+				"Comparé dos soluciones EDR de forma independiente, medido por la detección y respuesta ante ataques cloud simulados, definiendo el protocolo, ejecutando las simulaciones y presentando los resultados a la dirección",
+				"Supervisé a diario las alertas de seguridad y la exposición cloud, medido por alertas y vulnerabilidades tratadas, mediante Microsoft Sentinel, Microsoft Defender for Endpoint y Wiz",
 			],
 		},
 		{
@@ -206,13 +209,14 @@ export const experiencesByLanguage = {
 	],
 	itit: [
 		{
-			period: "Aprile 2026 — Presente",
+			period: "Aprile 2026 — Ottobre 2026",
 			role: "Consulente di Cybersecurity",
 			company: "Ayming",
 			location: "Parigi, Francia",
 			highlights: [
 				"Guidato l'audit del ciclo PDCA (Plan-Do-Check-Act) con focus sulla fase Check conforme a ISO 27001, strutturando la documentazione di governance e la revisione dei rischi per l'audit, rafforzando la tracciabilità e migliorando la postura di conformità del 35%",
-				"Eseguito 3 test di penetrazione (2 su soluzioni clienti in pre-deployment e 1 interno), identificando debolezze critiche e migliorando la resilienza dei sistemi prima della messa in produzione",
+				"Confrontato due soluzioni EDR in modo indipendente, misurato tramite rilevamento e risposta ad attacchi cloud simulati, definendo il protocollo, eseguendo le simulazioni e presentando i risultati alla direzione",
+				"Monitorato quotidianamente gli avvisi di sicurezza e l'esposizione cloud, misurato tramite avvisi e vulnerabilità gestiti, con Microsoft Sentinel, Microsoft Defender for Endpoint e Wiz",
 			],
 		},
 		{
@@ -274,13 +278,14 @@ export const experiencesByLanguage = {
 	],
 	dede: [
 		{
-			period: "April 2026 — Heute",
+			period: "April 2026 — Oktober 2026",
 			role: "Cybersicherheitsberater",
 			company: "Ayming",
 			location: "Paris, Frankreich",
 			highlights: [
 				"Leitete PDCA-Zyklus-Audit (Plan-Do-Check-Act) mit Fokus auf Check-Phase gemäß ISO 27001, strukturierte Governance-Dokumentation und Risikobewertung für Audit-Vorbereitung, stärkte Rückverfolgbarkeit und verbesserte Compliance-Haltung um 35%",
-				"Führte 3 Penetrationstests durch (2 auf Kundenlösungen im Pre-Deployment und 1 intern), identifizierte kritische Schwachstellen und verbesserte System-Resilienz vor Produktionsstart",
+				"Verglich zwei EDR-Lösungen unabhängig, gemessen an Erkennung und Reaktion bei simulierten Cloud-Angriffen, durch Definition des Protokolls, Durchführung der Simulationen und Präsentation der Ergebnisse vor der Geschäftsleitung",
+				"Überwachte täglich Sicherheitswarnungen und Cloud-Exposition, gemessen an bearbeiteten Warnungen und Schwachstellen, mit Microsoft Sentinel, Microsoft Defender for Endpoint und Wiz",
 			],
 		},
 		{
@@ -342,13 +347,14 @@ export const experiencesByLanguage = {
 	],
 	fifi: [
 		{
-			period: "Huhtikuu 2026 — Nykyhetki",
+			period: "Huhtikuu 2026 — Lokakuu 2026",
 			role: "Kyberturvallisuuskonsultti",
 			company: "Ayming",
 			location: "Pariisi, Ranska",
 			highlights: [
 				"Johtanut PDCA-syklin (Plan-Do-Check-Act) auditointia keskittyen Check-vaiheeseen ISO 27001 -standardin mukaisesti, jäsentäen hallintodokumentaatiota ja riskikatselmusta auditointia varten, vahvistaen jäljitettävyyttä ja parantaen vaatimustenmukaisuutta 35%",
-				"Suorittanut 3 tunkeutumistestiä (2 asiakasratkaisuille käyttöönottoa edeltävässä vaiheessa ja 1 sisäisesti), tunnistaen kriittisiä heikkouksia ja parantaen järjestelmien kestävyyttä ennen tuotantoonvientiä",
+				"Vertaili kaksi EDR-ratkaisua riippumattomasti, mitattuna havainnoinnilla ja reagoinnilla simuloituihin pilvihyökkäyksiin, määrittelemällä protokollan, suorittamalla simulaatiot ja esittelemällä tulokset johdolle",
+				"Valvoi päivittäin tietoturvahälytyksiä ja pilvialtistusta, mitattuna käsitellyillä hälytyksillä ja haavoittuvuuksilla, Microsoft Sentinelillä, Microsoft Defender for Endpointilla ja Wizillä",
 			],
 		},
 		{
@@ -410,13 +416,14 @@ export const experiencesByLanguage = {
 	],
 	svse: [
 		{
-			period: "April 2026 — Nutid",
+			period: "April 2026 — Oktober 2026",
 			role: "Cybersäkerhetskonsult",
 			company: "Ayming",
 			location: "Paris, Frankrike",
 			highlights: [
 				"Ledde PDCA-cykelrevision (Plan-Do-Check-Act) med fokus på Check-fasen i enlighet med ISO 27001, strukturerade styrningsdokumentation och riskgranskning för revisionsförberedelse, stärkte spårbarheten och förbättrade efterlevnadsnivån med 35%",
-				"Genomförde 3 penetrationstester (2 på kundlösningar i förproduktion och 1 internt), identifierade kritiska svagheter och förbättrade systemens motståndskraft före produktionssättning",
+				"Jämförde två EDR-lösningar oberoende, mätt genom detektering och respons vid simulerade molnattacker, genom att definiera protokollet, köra simuleringarna och presentera resultaten för ledningen",
+				"Övervakade dagligen säkerhetsvarningar och molnexponering, mätt genom hanterade varningar och sårbarheter, med Microsoft Sentinel, Microsoft Defender for Endpoint och Wiz",
 			],
 		},
 		{
